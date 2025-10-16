@@ -47,8 +47,8 @@
 			]{\inits{J.E.}\fnm{Jane E.} \snm{Doe}} % inits: INICIALES DE AUTOR, fnm: NOMBRE DE AUTOR, snm: APELLIDOS DE AUTOR
 			\author[
 			  addressref={aff1},
-			  email={john.RS.Smith@cambridge.co.uk}
-			]{\inits{J.R.S.}\fnm{John R.S.} \snm{Smith}}
+			  email={gamy-@uma.es}
+			]{\inits{G.M.Y}\fnm{Gabriela Milenova} \snm{Yordanova}}
 			
 			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 			%% AFILIACION. NO TOCAR                     %%
@@ -88,109 +88,6 @@
 	
 	\end{frontmatter}
 	
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	%% EJEMPLO DE LATEX %%                                                                %%
-	%% BORRAR ANTES DE ENTREGAR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!              %%
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	
-	\section*{Content}
-		Text and results for this section, as per the individual journal's instructions for authors. Here, we reference the figure \ref{fig:cost_genome} and figure \ref{fig:cost_megabase} but also the table \ref{tab:ejemplo}.
-	
-	\section*{Section title}
-		Text for this section\ldots
-
-		In this section we examine the growth rate of the mean of $Z_0$, $Z_1$ and $Z_2$. In
-		addition, we examine a common modeling assumption and note the
-		importance of considering the tails of the extinction time $T_x$ in
-		studies of escape dynamics.
-		We will first consider the expected resistant population at $vT_x$ for
-		some $v>0$, (and temporarily assume $\alpha=0$)
-		%
-		\[
-		E \bigl[Z_1(vT_x) \bigr]=
-		\int_0^{v\wedge
-			1}Z_0(uT_x)
-		\exp (\lambda_1)\,du .
-		\]
-		%
-		If we assume that sensitive cells follow a deterministic decay
-		$Z_0(t)=xe^{\lambda_0 t}$ and approximate their extinction time as
-		$T_x\approx-\frac{1}{\lambda_0}\log x$, then we can heuristically
-		estimate the expected value as
-		%
-		\begin{equation}\label{eqexpmuts}
-			\begin{aligned}[b]
-				&      E\bigl[Z_1(vT_x)\bigr]\\
-				&\quad      = \frac{\mu}{r}\log x
-				\int_0^{v\wedge1}x^{1-u}x^{({\lambda_1}/{r})(v-u)}\,du .
-			\end{aligned}
-		\end{equation}
-		%
-		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		%% USAR \cite{...} PARA INCLUIR REFERENCIAS BIBLIOGRAFICAS          %%
-		%%  \cite{koon}  Para una sola                                      %%
-		%%  \cite{oreg,khar,zvai,xjon,schn,pond} Para una lista             %%
-		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		Thus we observe that this expected value is finite for all $v>0$ (also see \cite{koon,xjon,marg,schn,koha,issnic}).
-		
-		
-		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		%% FIGURAS                                                                               %%
-		%% includegraphics: inserta la imagen                                                    %%
-		%% caption: descripcion de la figura                                                     %%
-		%% label: etiqueta para hacer referencia a la figura en el texto con la instrucción ref  %%
-		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
-		
-		\begin{figure}[h!]
-			\includegraphics[width=0.9\textwidth]{figures/Sequencing_Cost_per_Genome_May2020.jpg}
-			\caption{Sample figure title}
-			\label{fig:cost_genome}
-		\end{figure}
-		
-		\begin{figure}[h!]
-			\includegraphics[width=0.9\textwidth]{figures/Sequencing_Cost_per_Megabase_May2020.jpg}
-			\caption{Sample figure title}
-			\label{fig:cost_megabase}
-		\end{figure}
-		
-		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		%% TABLAS                                                                               %%
-		%% caption: Descripción tabla                                                           %%
-		%% \begin{tabular}{letras}: Indica numero de columnas.                                  %%
-		%%    Una letra por columna, la letra indica la alineación de la columna:               %%
-		%%    c center, l left, r right                                                         %%
-		%% hline: Representa una linea como entre filas                                         %%
-		%% \\: fin de fila                                                                      %%
-		%% &: delimitador de celda                                                              %%
-		%% label: etiqueta para hacer referencia a la tabla en el texto con la instrucción ref  %%
-		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		
-		\begin{table}[h!]
-			\caption{Sample table title. This is where the description of the table should go}
-			\begin{tabular}{cccc}
-				\hline
-				& B1  &B2   & B3\\ 
-				\hline
-				A1 & 0.1 & 0.2 & 0.3\\
-				A2 & ... & ..  & .\\
-				A3 & ..  & .   & .\\ 
-				\hline
-				\label{tab:ejemplo}
-			\end{tabular}
-		\end{table}
-				
-		\subsection*{Sub-heading for section}
-			Text for this sub-heading\ldots
-	
-			\subsubsection*{Sub-sub heading for section}
-				Text for this sub-sub-heading\ldots
-					
-					\paragraph*{Sub-sub-sub heading for section}
-						Text for this sub-sub-sub-heading\ldots
-	
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	%% FIN DE EJEMPLO !!!!!!!!!!!! %%
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	%% COMIENZO DEL DOCUMENTO REAL %%
@@ -208,23 +105,7 @@
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
 	\begin{backmatter}
-	
-		\section*{Abreviaciones}%% if any
-			Indicar lista de abreviaciones mostrando cada acrónimo a que corresponde
-		
-		\section*{Disponibilidad de datos y materiales}%% if any
-			Debéis indicar aquí un enlace a vuestro repositorio de github.
-		
-		\section*{Contribución de los autores}
-			Usando las iniciales que habéis definido al comienzo del documento, debeis indicar la contribución al proyecto en el estilo:
-			J.E : Encargado del análisis de coexpresión con R, escritura de resultados; J.R.S : modelado de red con python y automatizado del código, escritura de métodos; ...
-			OJO: que sea realista con los registros que hay en vuestros repositorios de github. 
-		
-		
-		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		%% BIBLIOGRAFIA: no teneis que tocar nada, solo sustituir el archivo bibliography.bib %%
-		%% por el que hayais generado vosotros                                                %%
-		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 		
 		\bibliographystyle{bmc-mathphys} % Style BST file (bmc-mathphys, vancouver, spbasic).
 		\bibliography{bibliography}      % Bibliography file (usually '*.bib' )
