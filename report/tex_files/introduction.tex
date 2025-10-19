@@ -1,17 +1,57 @@
 \section{Introducción}
 Se estima que más del 70\% de las muertes en el mundo están relacionadas con enfermedades no transmisibles, es decir, patologías de larga duración y progresión lenta que no se transmiten entre personas y que incluyen afecciones como el cáncer, las enfermedades cardiovasculares o las neurodegenerativas \cite{who2023}. Dentro de este último grupo, patologías como la esclerosis lateral amiotrófica (ELA) suponen un desafío particular, tanto por la complejidad de su diagnóstico como por la evolución impredecible de sus síntomas \cite{Hardiman2017}. En este contexto, la detección temprana supone una ventaja y, al mismo tiempo, un desafío crucial para mitigar el impacto clínico en los pacientes y optimizar los sistemas de salud. 
 
-A día de hoy, los avances tecnológicos en el área de la biología de sistemas, abarcando campos más específicos como la genómica, la proteómica y la metabolómica, han demostrado producir resultados significativos en el diagnóstico y la detección de numerosas patologías \cite{Kitano2002}. Estos enfoques han sido aplicados con éxito en el análisis de enfermedades complejas como el cáncer \cite{Barabasi2011}, la diabetes tipo 2 \cite{Nielsen2017} y las enfermedades neurodegenerativas \cite{Tian2022}, permitiendo identificar biomarcadores, redes moleculares disfuncionales y posibles dianas terapéuticas.
+A día de hoy, los avances tecnológicos en el área de la biología de sistemas, abarcando campos más específicos como la genómica, la proteómica y la metabolómica, han demostrado producir resultados significativos en el diagnóstico y la detección de numerosas patologías \cite{Kitano2002}. Estos enfoques han sido aplicados con éxito en el análisis de enfermedades complejas como el cáncer \cite{Barabasi2011}, la diabetes tipo 2 \cite{Nielsen2017} y las enfermedades neurodegenerativas \cite{Tian2022}, permitiendo identificar biomarcadores, redes moleculares disfuncionales y posibles dianas terapéuticas. 
 
-Para interpretar la gran cantidad de datos genómicos y vincularlos a manifestaciones clínicas, es fundamental utilizar vocabularios estandarizados. En este contexto, el sistema HPO (Human Phenotype Ontology) \cite{hpo2025} describe tanto signos como síntomas y sus características clínicas asociadas a las enfermedades humanas. La ELA, definida por un conjunto característico de síntomas, se representa en HPO como un fenotipo complejo bajo el identificador HP:0007354, el cual se asocia a un conjunto específico de genes.
+Para interpretar la gran cantidad de datos genómicos y vincularlos a manifestaciones clínicas, es fundamental utilizar vocabularios estandarizados. En este marco, el sistema Human Phenotype Ontology (HPO) \cite{hpo2025} describe tanto signos como síntomas y sus características clínicas asociadas a las enfermedades humanas. La ELA, definida por un conjunto característico de síntomas, se representa en la HPO como un fenotipo específico bajo el identificador \textit{HP:0007354}, el cual se asocia a un grupo determinado de genes \cite{ELA_HPO}.
 
-La ELA es una enfermedad neurodegenerativa que se caracteriza por una degeneración de neuronas motoras, tanto a nivel superior como a nivel inferior. Esta patología tiene una tasa anual de diagnóstico a nivel mundial de entre 2 y 11 casos por cada 100.000 habitantes. Específicamente, en Europa la incidencia anual es de 2.16 casos por cada 100.000 habitantes. Esta afecta en mayor medida a los hombres (3 por cada 100.000 habitantes), por sobre las mujeres (2.4 por cada 100.00 habitantes) \cite{Beghi_2010}.
-Si bien aún se desconocen sus causas, se ha logrado entender su patogénesis, principalmente relacionadas con mutaciones cromosómicas [cita 5]. La mayoría de estas mutaciones son de fenotipo único, excepto por la ELA tipo 1 que es causada por una mutación en el gen SOD1 que codifica para la superóxido dismutasa 1, una proteína que, al plegarse de forma incorrecta, genera toxicidad.
+La ELA se caracteriza por una degeneración de las neuronas motoras, tanto a nivel superior como a nivel inferior \cite{xie2023cortical}. Esta patología tiene una tasa anual de diagnóstico a nivel mundial de entre 2 y 11 casos por cada 100.000 habitantes \cite{Beghi2010}. Específicamente, en Europa la incidencia anual es de 2.16 casos por cada 100.000 habitantes  \cite{Beghi2010}. Esta afecta en mayor medida a los hombres (3 por cada 100.000 habitantes), por sobre las mujeres (2.4 por cada 100.00 habitantes) \cite{Beghi2010}. La enfermedad es mayoritariamente esporádica, si bien aproximadamente el 5-10\% de los casos se presenta en formas familiares con herencia autosómica dominante \cite{Barberio2023, Kiernan2021}. En las formas juveniles de ELA también se han descrito mutaciones con herencia autosómica recesiva, siendo estas menos frecuentes pero clínicamente relevantes \cite{Wu2016}.
 
-Los estudios muestran que, en el 75\% de los pacientes, la enfermedad comienza de forma focal, distal y asimétrica seguida por una progresión anatómica lógica a grupos contiguos de motoneuronas \cite {rowland2001}. Usualmente, es una enfermedad de aparición esporádica, pero el 10\% de los casos puede ser de carácter familiar, con una herencia autosómica dominante [CITAR].  El patrón de herencia es, en la mayoría de las variantes, aunque hay casos de herencia autosómica recesiva (AR) que aparecen en las formas juveniles de ELA. 
-Respecto a la ELA, se han detectado más de 20 genes implicados en la aparición de esta patología (en la reciente actualización de cartera de servicios genómica, presentada el 23 de enero de 2024 por el Ministerio de Sanidad y Consumo), aunque son las mutaciones de cuatro genes (SOD1, TARDBP, FUS y C9orf72) las que causan más del 50\% de los casos familiares \cite {dewan2021}. 
+Si bien todavía no se conocen completamente las causas de la ELA, se ha avanzado sustancialmente en comprender su patogénesis y base genética. Se han identificado mutaciones en múltiples genes —entre ellos \textit{SOD1}, \textit{C9orf72}, \textit{TARDBP}, \textit{FUS}, \textit{NEK1}, \textit{OPTN}, \textit{TBK1}, entre otros— que pueden causar o aumentar el riesgo de ELA, tanto en formas familiares como, en algunos casos, esporádicas \cite{VanDaele2023}. En particular, las mutaciones en \textit{SOD1} fueron de las primeras identificadas y siguen siendo relevantes: estos cambios genéticos pueden alterar la superóxido dismutasa 1, una proteína que, al plegarse de forma incorrecta, genera toxicidad mediante mecanismos de disfunción mitocondrial \cite{Gagliardi2023}. Además, los fenotipos asociados a mutaciones en este gen son muy variables \cite{Berdynski2025}. Se estima que mutaciones en cuatro genes —\textit{SOD1}, \textit{TARDBP}, \textit{FUS} y \textit{C9orf72}— explican más del 50\% de los casos familiares de ELA \cite{Rummens2025}. No obstante, el número de genes implicados continúa aumentando conforme se producen avances en la investigación.
 
-Los tratamientos actuales se basan en disminuir la progresión de la enfermedad y tratar los síntomas. Desde el punto de vista farmacológico solo existe un tratamiento aprobado, el cual se denomina Riluzole, el cual permite a los pacientes mejorar su calidad de vida.[CITA]
-La ausencia de una cura subraya la importancia de los tratamientos actuales, cuyo objetivo es ralentizar la progresión de la enfermedad y manejar los síntomas para mejorar la calidad de vida de los pacientes. La ELA es diagnosticada mediante criterios clínicos basados en la sintomatología, ya que no existen biomarcadores definitivos para la enfermedad. Esta limitación retrasa el diagnóstico y la intervención temprana. 
+En la  \autoref{tab:genes_introduccion} se presenta un resumen de la clasificación funcional de los principales genes asociados a la ELA según el mecanismo biológico en el que participan:
 
+\begin{table}[ht]
+	\centering
+	\renewcommand{\arraystretch}{1.4}
+	\setlength{\tabcolsep}{6pt}
+	\adjustbox{center,max width=0.95\textwidth}{
+		\begin{tabular}{|p{3.5cm}|p{7.5cm}|p{5.5cm}|}
+			\hline
+			\textbf{Categoría funcional} & \textbf{Genes asociados} & \textbf{Función principal alterada} \\ 
+			\hline
+			
+			Procesamiento de ARN &
+			\textit{TARDBP}, \textit{FUS}, \textit{HNRNPA1}, \textit{HNRNPA2B1}, \textit{MATR3}, \textit{SETX}, \textit{TIA1}, \textit{GLE1} &
+			Alteraciones en transcripción, splicing y transporte de ARN. \\ 
+			\hline
+			
+			Autofagia y degradación proteica &
+			\textit{SQSTM1}, \textit{OPTN}, \textit{TBK1}, \textit{UBQLN2}, \textit{VCP}, \textit{CCNF}, \textit{CHMP2B}, \textit{CYLD}, \textit{SPG11} &
+			Acumulación de proteínas mal plegadas y fallo en los mecanismos de eliminación celular. \\ 
+			\hline
+			
+			Estrés oxidativo y disfunción mitocondrial &
+			\textit{SOD1}, \textit{CHCHD10}, \textit{PPARGC1A}, \textit{VAPB}, \textit{SIGMAR1}, \textit{DAO}, \textit{GLT8D1}, \textit{TRPM7} &
+			Producción excesiva de especies reactivas de oxígeno y daño mitocondrial. \\ 
+			\hline
+			
+			Metabolismo lipídico y oxidativo &
+			\textit{SPTLC1}, \textit{PON1}, \textit{PON2}, \textit{PON3}, \textit{ANG}, \textit{ANXA11} &
+			Disregulación del metabolismo lipídico y alteraciones en la homeostasis oxidativa. \\ 
+			\hline
+			
+			Procesos neurodegenerativos &
+			\textit{MAPT}, \textit{PSEN1}, \textit{TREM2}, \textit{ALS2} &
+			Solapamiento con otras enfermedades neurodegenerativas (ej., Alzheimer o FTD). \\ 
+			\hline
+			
+	\end{tabular}}
+	\caption{Principales genes asociados a la ELA, agrupados según su categoría funcional y la función alterada \cite{Hardiman2017,Kiernan2021,Chia2018,Mejzini2019,Renton2014}.}
+	\label{tab:genes_introduccion}
+\end{table}
+
+La enfermedad se diagnostica mediante criterios clínicos basados en la sintomatología, ya que no existen biomarcadores claros para la enfermedad \cite{Bjornevik2023}. Esta limitación causa un retraso en el diagnóstico y la intervención temprana. Los tratamientos actuales se basan en disminuir la progresión de la enfermedad y atenuar los síntomas lo máximo posible para mejorar la calidad de vida, ya que todavía no existe cura \cite{Lynch2023}. Desde el punto de vista farmacológico, Riluzole es uno de los medicamentos con mayor evidencia de prolongar la supervivencia, aunque su efecto es más bien modesto \cite{RiluzoleCochrane2012, RWE_Riluzole2020}. Además, existen otros fármacos autorizados en ciertos países, como Edaravone, que en poblaciones seleccionadas pueden ralentizar el deterioro funcional \cite{Brooks2024}.
+
+Por lo tanto, este trabajo tiene como objetivo analizar las relaciones entre los genes asociados a la ELA y sus fenotipos correspondientes para identificar patrones que puedan conducir a un análisis estadístico más robusto de la enfermedad. Mediante el uso de técnicas de biología de sistemas, incluyendo las herramientas de construcción y análisis de redes basadas en datos de interacción, se busca comprender mejor los mecanismos moleculares de la enfermedad.
 

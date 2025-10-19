@@ -1,11 +1,5 @@
 \documentclass{bmcart}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%                                          %%
-%% CARGA DE PAQUETES DE LATEX               %%
-%%                                          %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 %%% Load packages
 \usepackage{amsthm,amsmath}
 \usepackage{graphicx}
@@ -14,13 +8,11 @@
 \usepackage[utf8]{inputenc} %unicode support
 %\usepackage[applemac]{inputenc} %applemac support if unicode package fails
 %\usepackage[latin1]{inputenc} %UNIX support if unicode package fails
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%                                          %%
-%% COMIENZO DEL DOCUMENTO                   %%
-%%                                          %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{array}
+\usepackage{adjustbox}
+\setlength\parskip{\baselineskip}
+\usepackage{multirow}
+\usepackage{hyperref}
 
 \begin{document}
 
@@ -28,35 +20,29 @@
 	
 		\begin{fmbox}
 			\dochead{Research}
+		
 			
-			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-			%% INTRODUCIR TITULO PROYECTO               %%
-			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-			
-			\title{A sample article title}
-			
-			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-			%% AUTORES. METER UNA ENTRADA AUTHOR        %%
-			%% POR PERSONA                              %%
-			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+			\title{Análisis de la Esclerosis Lateral Amiotrófica a través de la biología de sistemas}
 			
 			\author[
-			  addressref={aff1},                   % ESTA LINEA SE COPIA IGUAL PARA CADA AUTOR
-			  corref={aff1},                       % ESTA LINEA SOLO DEBE TENERLA EL COORDINADOR DEL GRUPO
-			  email={santiagojuarroz@uma.es}   % VUESTRO CORREO ACTIVO
-			]{\inits{S.J.S.}\fnm{Santiago} \snm{Juarroz Surballe}} % inits: INICIALES DE AUTOR, fnm: NOMBRE DE AUTOR, snm: APELLIDOS DE AUTOR
+			  addressref={aff1},                   
+			  corref={aff1},                      
+			  email={santiagojuarroz@uma.es}   
+			]{\inits{S.J.S.}\fnm{Santiago} \snm{Juarroz Surballe}} 
 			\author[ 	
 			  addressref={aff1},
 			  email={gamy-@uma.es}
-			]{\inits{G.M.Y}\fnm{Gabriela Milenova} \snm{Yordanova}}
+			]{\inits{G.M.Y.}\fnm{Gabriela Milenova} \snm{Yordanova}}
 			\author[
 			addressref={aff1},
 			email={chediackmaga@uma.es}
 			]{\inits{M.C.C.}\fnm{Maga C.} \snm{Chediack}}
+			\author[ 	
+			addressref={aff1},
+			email={srozenblum@uma.es}
+			]{\inits{S.R.}\fnm{Sebastián} \snm{Rozenblum}}
 			
-			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-			%% AFILIACION. NO TOCAR                     %%
-			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 			
 			\address[id=aff1]{%                           % unique id
 			  \orgdiv{ETSI Informática},             % department, if any
@@ -70,21 +56,15 @@
 		\begin{abstractbox}
 		
 			\begin{abstract} % abstract
-			
-			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-			%% RESUMEN BREVE DE NO MAS DE 100 PALABRAS   %%
-			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+	
 			
 			\end{abstract}
 			
-			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-			%% PALABRAS CLAVE DEL PROYECTO              %%
-			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-			
 			\begin{keyword}
-			\kwd{sample}
-			\kwd{article}
-			\kwd{author}
+			\kwd{ELA}
+			\kwd{gen}
+			\kwd{interacción}
+			\kwd{ontología}
 			\end{keyword}
 		
 		
@@ -92,27 +72,17 @@
 	
 	\end{frontmatter}
 	
-	
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	%% COMIENZO DEL DOCUMENTO REAL %%
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	
 	\input{tex_files/introduction.tex}
 	\input{tex_files/material_methods.tex}
 	\input{tex_files/resultados.tex}
 	\input{tex_files/discusion.tex}
 	\input{tex_files/conclusiones.tex}
 	
-	
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	%% OTRA INFORMACIÓN                         %%
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	
 	\begin{backmatter}
 
 		
-		\bibliographystyle{bmc-mathphys} % Style BST file (bmc-mathphys, vancouver, spbasic).
-		\bibliography{bibliography}      % Bibliography file (usually '*.bib' )
+		\bibliographystyle{bmc-mathphys} 
+		\bibliography{bibliography}     
 	
 	\end{backmatter}
 \end{document}

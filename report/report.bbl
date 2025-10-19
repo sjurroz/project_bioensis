@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{2}
+\begin{thebibliography}{25}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -73,6 +73,375 @@ doi:\doiurl{10.1038/nrdp.2017.71}
 \end{barticle}
 \endbibitem
 
+%%% 3
+\bibitem{Kitano2002}
+\begin{barticle}
+\bauthor{\bsnm{Kitano}, \binits{H.}}:
+\batitle{Systems biology: a brief overview}.
+\bjtitle{Science}
+\bvolume{295}(\bissue{5560}),
+\bfpage{1662}--\blpage{1664}
+(\byear{2002}).
+doi:\doiurl{10.1126/science.1069492}
+\end{barticle}
+\endbibitem
+
+%%% 4
+\bibitem{Barabasi2011}
+\begin{barticle}
+\bauthor{\bsnm{Barab{\'a}si}, \binits{A.-L.}},
+\bauthor{\bsnm{Gulbahce}, \binits{N.}},
+\bauthor{\bsnm{Loscalzo}, \binits{J.}}:
+\batitle{Network medicine: a network-based approach to human disease}.
+\bjtitle{Nature Reviews Genetics}
+\bvolume{12}(\bissue{1}),
+\bfpage{56}--\blpage{68}
+(\byear{2011}).
+doi:\doiurl{10.1038/nrg2918}
+\end{barticle}
+\endbibitem
+
+%%% 5
+\bibitem{Nielsen2017}
+\begin{barticle}
+\bauthor{\bsnm{Nielsen}, \binits{J.}}:
+\batitle{Systems biology of metabolism: a driver for developing personalized
+  and precision medicine}.
+\bjtitle{Cell Metabolism}
+\bvolume{25}(\bissue{3}),
+\bfpage{572}--\blpage{579}
+(\byear{2017}).
+doi:\doiurl{10.1016/j.cmet.2017.02.002}
+\end{barticle}
+\endbibitem
+
+%%% 6
+\bibitem{Tian2022}
+\begin{barticle}
+\bauthor{\bsnm{Tian}, \binits{M.}},
+\bauthor{\bsnm{Chen}, \binits{J.}},
+\bauthor{\bsnm{Yang}, \binits{Z.}},
+\bauthor{\bsnm{Peng}, \binits{X.}}:
+\batitle{Systems biology approaches to understanding neurodegenerative
+  diseases}.
+\bjtitle{Cellular and Molecular Life Sciences}
+\bvolume{79}(\bissue{4}),
+\bfpage{1}--\blpage{22}
+(\byear{2022}).
+doi:\doiurl{10.1007/s00018-022-04261-9}
+\end{barticle}
+\endbibitem
+
+%%% 7
+\bibitem{hpo2025}
+\begin{botherref}
+\oauthor{\bsnm{{The Human Phenotype Ontology Consortium}}}:
+Human Phenotype Ontology.
+\url{https://hpo.jax.org/}.
+Accessed: 2024-10-16
+(2025)
+\end{botherref}
+\endbibitem
+
+%%% 8
+\bibitem{ELA_HPO}
+\begin{botherref}
+\oauthor{\bsnm{{Human Phenotype Ontology Consortium}}}:
+{HP:0007354: Amyotrophic lateral sclerosis}.
+\url{https://hpo.jax.org/browse/term/HP:0007354}.
+Accessed: October 16, 2024
+\end{botherref}
+\endbibitem
+
+%%% 9
+\bibitem{xie2023cortical}
+\begin{barticle}
+\bauthor{\bsnm{Xie}, \binits{M.}},
+\bauthor{\bsnm{Pallegar}, \binits{P.N.}},
+\bauthor{\bsnm{Parusel}, \binits{S.}},
+\bauthor{\bsnm{Nguyen}, \binits{A.T.}},
+\bauthor{\bsnm{Wu}, \binits{L.-J.}}:
+\batitle{Regulation of cortical hyperexcitability in amyotrophic lateral
+  sclerosis: focusing on glial mechanisms}.
+\bjtitle{Molecular Neurodegeneration}
+\bvolume{18},
+\bfpage{75}
+(\byear{2023}).
+doi:\doiurl{10.1186/s13024-023-00665-w}
+\end{barticle}
+\endbibitem
+
+%%% 10
+\bibitem{Beghi2010}
+\begin{barticle}
+\bauthor{\bsnm{Beghi}, \binits{E.}},
+\bauthor{\bsnm{Logroscino}, \binits{G.}}:
+\batitle{Variation in worldwide incidence of amyotrophic lateral sclerosis: a
+  meta-analysis}.
+\bjtitle{The Lancet}
+\bvolume{376}(\bissue{9743}),
+\bfpage{513}--\blpage{523}
+(\byear{2010}).
+doi:\doiurl{10.1016/S0140-6736(10)61156-7}
+\end{barticle}
+\endbibitem
+
+%%% 11
+\bibitem{Barberio2023}
+\begin{barticle}
+\bauthor{\bsnm{Barberio}, \binits{J.}},
+\bauthor{\bsnm{Lally}, \binits{C.}},
+\bauthor{\bsnm{Kupelian}, \binits{V.}},
+\bauthor{\bsnm{Hardiman}, \binits{O.}},
+\bauthor{\bsnm{Flanders}, \binits{W.D.}}:
+\batitle{Estimated familial amyotrophic lateral sclerosis proportion: A
+  literature review and meta-analysis}.
+\bjtitle{Neurology: Genetics}
+\bvolume{9}(\bissue{6}),
+\bfpage{200109}
+(\byear{2023}).
+doi:\doiurl{10.1212/NXG.0000000000200109}
+\end{barticle}
+\endbibitem
+
+%%% 12
+\bibitem{Kiernan2021}
+\begin{barticle}
+\bauthor{\bsnm{Kiernan}, \binits{M.C.}},
+\bauthor{\bsnm{Vucic}, \binits{S.}},
+\bauthor{\bsnm{Talbot}, \binits{K.}},
+\bauthor{\bsnm{McDermott}, \binits{C.J.}},
+\bauthor{\bsnm{Hardiman}, \binits{O.}},
+\bauthor{\bsnm{Shefner}, \binits{J.M.}},
+\bauthor{\bsnm{Al-Chalabi}, \binits{A.}},
+\bauthor{\bsnm{Shaw}, \binits{P.J.}}:
+\batitle{Amyotrophic lateral sclerosis}.
+\bjtitle{The Lancet}
+\bvolume{397}(\bissue{10280}),
+\bfpage{394}--\blpage{406}
+(\byear{2021}).
+doi:\doiurl{10.1016/S0140-6736(20)30959-9}
+\end{barticle}
+\endbibitem
+
+%%% 13
+\bibitem{Wu2016}
+\begin{barticle}
+\bauthor{\bsnm{Wu}, \binits{C.}},
+\bauthor{\bsnm{Fan}, \binits{D.}}:
+\batitle{A novel missense mutation of the ddhd1 gene associated with juvenile
+  amyotrophic lateral sclerosis}.
+\bjtitle{Frontiers in Aging Neuroscience}
+\bvolume{8},
+\bfpage{291}
+(\byear{2016}).
+doi:\doiurl{10.3389/fnagi.2016.00291}
+\end{barticle}
+\endbibitem
+
+%%% 14
+\bibitem{VanDaele2023}
+\begin{barticle}
+\bauthor{\bsnm{Van~Daele}, \binits{S.H.}},
+\bauthor{\bsnm{Moisse}, \binits{M.}},
+\bauthor{\bparticle{van} \bsnm{Vugt}, \binits{J.J.F.A.}},
+\bauthor{\bsnm{Zwamborn}, \binits{R.A.J.}},
+\bauthor{\bparticle{van} \bsnm{Rheenen}, \binits{W.}},
+\bauthor{\bsnm{Van~Eijk}, \binits{K.}},
+\bauthor{\bsnm{Kenna}, \binits{K.}},
+\bauthor{\bsnm{Corcia}, \binits{P.}},
+\bauthor{\bsnm{Couratier}, \binits{P.}},
+\bauthor{\bsnm{Hardiman}, \binits{O.}}, \betal:
+\batitle{Genetic variability in sporadic amyotrophic lateral sclerosis}.
+\bjtitle{Brain}
+\bvolume{146}(\bissue{9}),
+\bfpage{3760}--\blpage{3769}
+(\byear{2023}).
+doi:\doiurl{10.1093/brain/awad120}
+\end{barticle}
+\endbibitem
+
+%%% 15
+\bibitem{Gagliardi2023}
+\begin{barticle}
+\bauthor{\bsnm{Gagliardi}, \binits{D.}},
+\bauthor{\bsnm{Ripellino}, \binits{P.}},
+\bauthor{\bsnm{Meneri}, \binits{M.}}, \betal:
+\batitle{Clinical and molecular features of patients with amyotrophic lateral
+  sclerosis and sod1 mutations: a monocentric study}.
+\bjtitle{Frontiers in Neurology}
+\bvolume{14},
+\bfpage{1169689}
+(\byear{2023}).
+doi:\doiurl{10.3389/fneur.2023.1169689}
+\end{barticle}
+\endbibitem
+
+%%% 16
+\bibitem{Berdynski2025}
+\begin{barticle}
+\bauthor{\bsnm{Berdyński}, \binits{M.}},
+\bauthor{\bsnm{Safranow}, \binits{K.}},
+\bauthor{\bsnm{Andersen}, \binits{P.M.}},
+\bauthor{\bsnm{Żekanowski}, \binits{C.}}:
+\batitle{Phenotypic characterization of als-causing sod1 mutations affecting
+  polypeptide length}.
+\bjtitle{Human Mutation}
+\bvolume{2025},
+\bfpage{9792233}
+(\byear{2025}).
+doi:\doiurl{10.1155/humu/9792233}
+\end{barticle}
+\endbibitem
+
+%%% 17
+\bibitem{Rummens2025}
+\begin{barticle}
+\bauthor{\bsnm{Rummens}, \binits{J.}},
+\bauthor{\bsnm{Da~Cruz}, \binits{S.}}:
+\batitle{Rna-binding proteins in als and ftd: from pathogenic mechanisms to
+  therapeutic insights}.
+\bjtitle{Molecular Neurodegeneration}
+\bvolume{20},
+\bfpage{64}
+(\byear{2025}).
+doi:\doiurl{10.1186/s13024-025-00851-y}
+\end{barticle}
+\endbibitem
+
+%%% 18
+\bibitem{Chia2018}
+\begin{barticle}
+\bauthor{\bsnm{Chia}, \binits{R.}},
+\bauthor{\bsnm{Chiò}, \binits{A.}},
+\bauthor{\bsnm{Traynor}, \binits{B.J.}}:
+\batitle{Genetics and pathogenesis of amyotrophic lateral sclerosis}.
+\bjtitle{Nature Reviews Neurology}
+\bvolume{14}(\bissue{11}),
+\bfpage{651}--\blpage{664}
+(\byear{2018}).
+doi:\doiurl{10.1038/s41582-018-0047-0}
+\end{barticle}
+\endbibitem
+
+%%% 19
+\bibitem{Mejzini2019}
+\begin{barticle}
+\bauthor{\bsnm{Mejzini}, \binits{B.}},
+\bauthor{\bsnm{Flynn}, \binits{L.L.}},
+\bauthor{\bsnm{Pitout}, \binits{I.L.}},
+\bauthor{\bsnm{Fletcher}, \binits{S.}},
+\bauthor{\bsnm{Wilton}, \binits{S.D.}},
+\bauthor{\bsnm{Akkari}, \binits{P.A.}}:
+\batitle{Als genetics, mechanisms, and therapeutics: where are we now?}
+\bjtitle{Frontiers in Neuroscience}
+\bvolume{13},
+\bfpage{1310}
+(\byear{2019}).
+doi:\doiurl{10.3389/fnins.2019.01310}
+\end{barticle}
+\endbibitem
+
+%%% 20
+\bibitem{Renton2014}
+\begin{barticle}
+\bauthor{\bsnm{Renton}, \binits{A.E.}},
+\bauthor{\bsnm{Chio}, \binits{A.}},
+\bauthor{\bsnm{Traynor}, \binits{B.J.}}:
+\batitle{State of play in amyotrophic lateral sclerosis genetics}.
+\bjtitle{Nature Neuroscience}
+\bvolume{17}(\bissue{1}),
+\bfpage{17}--\blpage{23}
+(\byear{2014}).
+doi:\doiurl{10.1038/nn.3584}
+\end{barticle}
+\endbibitem
+
+%%% 21
+\bibitem{Bjornevik2023}
+\begin{barticle}
+\bauthor{\bsnm{Bjornevik}, \binits{K.}},
+\bauthor{\bsnm{Zhang}, \binits{Z.}},
+\bauthor{\bsnm{O'Reilly}, \binits{�.J.}},
+\bauthor{\bsnm{Berry}, \binits{J.D.}},
+\bauthor{\bsnm{Clish}, \binits{C.B.}},
+\bauthor{\bsnm{Matthews}, \binits{P.}},
+\bauthor{\bsnm{Schwarzschild}, \binits{M.A.}},
+\bauthor{\bsnm{Cudkowicz}, \binits{M.E.}},
+\bauthor{\bsnm{Weisskopf}, \binits{M.G.}},
+\bauthor{\bsnm{Ascherio}, \binits{A.}}:
+\batitle{Prediagnostic neurofilament light chain levels in amyotrophic lateral
+  sclerosis}.
+\bjtitle{Neurology}
+\bvolume{101}(\bissue{1}),
+\bfpage{13}--\blpage{23}
+(\byear{2023}).
+doi:\doiurl{10.1212/WNL.0000000000207296}
+\end{barticle}
+\endbibitem
+
+%%% 22
+\bibitem{Lynch2023}
+\begin{barticle}
+\bauthor{\bsnm{Lynch}, \binits{K.}}:
+\batitle{Optimizing pharmacologic treatment for als to improve outcomes and
+  quality of life}.
+\bjtitle{The American Journal of Managed Care}
+\bvolume{29}(\bissue{7 Suppl}),
+\bfpage{112}--\blpage{119}
+(\byear{2023}).
+doi:\doiurl{10.37765/ajmc.2023.89389}
+\end{barticle}
+\endbibitem
+
+%%% 23
+\bibitem{RiluzoleCochrane2012}
+\begin{barticle}
+\bauthor{\bsnm{Miller}, \binits{R.G.}},
+\bauthor{\bsnm{Mitchell}, \binits{J.D.}},
+\bauthor{\bsnm{Moore}, \binits{D.H.}},
+\bauthor{\bsnm{Swash}, \binits{M.}}:
+\batitle{Riluzole for amyotrophic lateral sclerosis (als)/motor neuron disease
+  (mnd)}.
+\bjtitle{Cochrane Database of Systematic Reviews}
+(\bissue{3})
+(\byear{2012}).
+doi:\doiurl{10.1002/14651858.CD001447.pub3}
+\end{barticle}
+\endbibitem
+
+%%% 24
+\bibitem{RWE_Riluzole2020}
+\begin{barticle}
+\bauthor{\bsnm{Hinchcliffe}, \binits{M.}},
+\bauthor{\bsnm{Smith}, \binits{A.}}, \betal:
+\batitle{Riluzole: real-world evidence supports significant extension of median
+  survival times in patients with amyotrophic lateral sclerosis}.
+\bjtitle{Degenerative Neurological and Neuromuscular Disease}
+\bvolume{10},
+\bfpage{111}--\blpage{118}
+(\byear{2020}).
+doi:\doiurl{10.2147/DNND.S268523}
+\end{barticle}
+\endbibitem
+
+%%% 25
+\bibitem{Brooks2024}
+\begin{barticle}
+\bauthor{\bsnm{Brooks}, \binits{B.R.}},
+\bauthor{\bsnm{Wynn}, \binits{D.}},
+\bauthor{\bsnm{Mitsumoto}, \binits{H.}}, \betal:
+\batitle{Efficacy of intravenous edaravone in slowing disability progression in
+  patients with amyotrophic lateral sclerosis: an individual patient data
+  meta-analysis}.
+\bjtitle{Therapeutic Advances in Neurological Disorders}
+\bvolume{17},
+\bfpage{17562864231220996}
+(\byear{2024}).
+doi:\doiurl{10.1177/17562864231220996}
+\end{barticle}
+\endbibitem
+
 \end{thebibliography}
 
 \newcommand{\BMCxmlcomment}[1]{}
@@ -109,6 +478,369 @@ doi:\doiurl{10.1038/nrdp.2017.71}
   <volume>3</volume>
   <issue>1</issue>
   <fpage>17071</fpage>
+</bibl>
+
+<bibl id="B3">
+  <title><p>Systems biology: a brief overview</p></title>
+  <aug>
+    <au><snm>Kitano</snm><fnm>H</fnm></au>
+  </aug>
+  <source>Science</source>
+  <publisher>American Association for the Advancement of Science</publisher>
+  <pubdate>2002</pubdate>
+  <volume>295</volume>
+  <issue>5560</issue>
+  <fpage>1662</fpage>
+  <lpage>-1664</lpage>
+</bibl>
+
+<bibl id="B4">
+  <title><p>Network medicine: a network-based approach to human
+  disease</p></title>
+  <aug>
+    <au><snm>Barab{\'a}si</snm><fnm>AL</fnm></au>
+    <au><snm>Gulbahce</snm><fnm>N</fnm></au>
+    <au><snm>Loscalzo</snm><fnm>J</fnm></au>
+  </aug>
+  <source>Nature Reviews Genetics</source>
+  <publisher>Nature Publishing Group</publisher>
+  <pubdate>2011</pubdate>
+  <volume>12</volume>
+  <issue>1</issue>
+  <fpage>56</fpage>
+  <lpage>-68</lpage>
+</bibl>
+
+<bibl id="B5">
+  <title><p>Systems biology of metabolism: a driver for developing personalized
+  and precision medicine</p></title>
+  <aug>
+    <au><snm>Nielsen</snm><fnm>J</fnm></au>
+  </aug>
+  <source>Cell Metabolism</source>
+  <publisher>Elsevier</publisher>
+  <pubdate>2017</pubdate>
+  <volume>25</volume>
+  <issue>3</issue>
+  <fpage>572</fpage>
+  <lpage>-579</lpage>
+</bibl>
+
+<bibl id="B6">
+  <title><p>Systems biology approaches to understanding neurodegenerative
+  diseases</p></title>
+  <aug>
+    <au><snm>Tian</snm><fnm>M</fnm></au>
+    <au><snm>Chen</snm><fnm>J</fnm></au>
+    <au><snm>Yang</snm><fnm>Z</fnm></au>
+    <au><snm>Peng</snm><fnm>X</fnm></au>
+  </aug>
+  <source>Cellular and Molecular Life Sciences</source>
+  <publisher>Springer</publisher>
+  <pubdate>2022</pubdate>
+  <volume>79</volume>
+  <issue>4</issue>
+  <fpage>1</fpage>
+  <lpage>-22</lpage>
+</bibl>
+
+<bibl id="B7">
+  <title><p>Human Phenotype Ontology</p></title>
+  <aug>
+    <au><cnm>{The Human Phenotype Ontology Consortium}</cnm></au>
+  </aug>
+  <source>\url{https://hpo.jax.org/}</source>
+  <pubdate>2025</pubdate>
+  <note>Accessed: 2024-10-16</note>
+</bibl>
+
+<bibl id="B8">
+  <title><p>{HP:0007354: Amyotrophic lateral sclerosis}</p></title>
+  <aug>
+    <au><cnm>{Human Phenotype Ontology Consortium}</cnm></au>
+  </aug>
+  <source>\url{https://hpo.jax.org/browse/term/HP:0007354}</source>
+  <note>Accessed: October 16, 2024</note>
+</bibl>
+
+<bibl id="B9">
+  <title><p>Regulation of cortical hyperexcitability in amyotrophic lateral
+  sclerosis: focusing on glial mechanisms</p></title>
+  <aug>
+    <au><snm>Xie</snm><fnm>M</fnm></au>
+    <au><snm>Pallegar</snm><fnm>PN</fnm></au>
+    <au><snm>Parusel</snm><fnm>S</fnm></au>
+    <au><snm>Nguyen</snm><fnm>AT</fnm></au>
+    <au><snm>Wu</snm><fnm>LJ</fnm></au>
+  </aug>
+  <source>Molecular Neurodegeneration</source>
+  <pubdate>2023</pubdate>
+  <volume>18</volume>
+  <fpage>75</fpage>
+</bibl>
+
+<bibl id="B10">
+  <title><p>Variation in worldwide incidence of amyotrophic lateral sclerosis:
+  a meta-analysis</p></title>
+  <aug>
+    <au><snm>Beghi</snm><fnm>E</fnm></au>
+    <au><snm>Logroscino</snm><fnm>G</fnm></au>
+  </aug>
+  <source>The Lancet</source>
+  <publisher>Elsevier</publisher>
+  <pubdate>2010</pubdate>
+  <volume>376</volume>
+  <issue>9743</issue>
+  <fpage>513</fpage>
+  <lpage>-523</lpage>
+</bibl>
+
+<bibl id="B11">
+  <title><p>Estimated Familial Amyotrophic Lateral Sclerosis Proportion: A
+  Literature Review and Meta-analysis</p></title>
+  <aug>
+    <au><snm>Barberio</snm><fnm>J</fnm></au>
+    <au><snm>Lally</snm><fnm>C</fnm></au>
+    <au><snm>Kupelian</snm><fnm>V</fnm></au>
+    <au><snm>Hardiman</snm><fnm>O</fnm></au>
+    <au><snm>Flanders</snm><fnm>WD</fnm></au>
+  </aug>
+  <source>Neurology: Genetics</source>
+  <pubdate>2023</pubdate>
+  <volume>9</volume>
+  <issue>6</issue>
+  <fpage>e200109</fpage>
+</bibl>
+
+<bibl id="B12">
+  <title><p>Amyotrophic lateral sclerosis</p></title>
+  <aug>
+    <au><snm>Kiernan</snm><fnm>M. C.</fnm></au>
+    <au><snm>Vucic</snm><fnm>S.</fnm></au>
+    <au><snm>Talbot</snm><fnm>K.</fnm></au>
+    <au><snm>McDermott</snm><fnm>C. J.</fnm></au>
+    <au><snm>Hardiman</snm><fnm>O.</fnm></au>
+    <au><snm>Shefner</snm><fnm>J. M.</fnm></au>
+    <au><snm>Al Chalabi</snm><fnm>A.</fnm></au>
+    <au><snm>Shaw</snm><fnm>P. J.</fnm></au>
+  </aug>
+  <source>The Lancet</source>
+  <pubdate>2021</pubdate>
+  <volume>397</volume>
+  <issue>10280</issue>
+  <fpage>394</fpage>
+  <lpage>-406</lpage>
+</bibl>
+
+<bibl id="B13">
+  <title><p>A Novel Missense Mutation of the DDHD1 Gene Associated with
+  Juvenile Amyotrophic Lateral Sclerosis</p></title>
+  <aug>
+    <au><snm>Wu</snm><fnm>C</fnm></au>
+    <au><snm>Fan</snm><fnm>D</fnm></au>
+  </aug>
+  <source>Frontiers in Aging Neuroscience</source>
+  <pubdate>2016</pubdate>
+  <volume>8</volume>
+  <fpage>291</fpage>
+</bibl>
+
+<bibl id="B14">
+  <title><p>Genetic variability in sporadic amyotrophic lateral
+  sclerosis</p></title>
+  <aug>
+    <au><snm>Van Daele</snm><fnm>SH</fnm></au>
+    <au><snm>Moisse</snm><fnm>M</fnm></au>
+    <au><snm>Vugt</snm><fnm>JJFA</fnm></au>
+    <au><snm>Zwamborn</snm><fnm>RAJ</fnm></au>
+    <au><snm>Rheenen</snm><fnm>W</fnm></au>
+    <au><snm>Van Eijk</snm><fnm>K</fnm></au>
+    <au><snm>Kenna</snm><fnm>K</fnm></au>
+    <au><snm>Corcia</snm><fnm>P</fnm></au>
+    <au><snm>Couratier</snm><fnm>P</fnm></au>
+    <au><snm>Hardiman</snm><fnm>O</fnm></au>
+    <au><cnm>{others}</cnm></au>
+  </aug>
+  <source>Brain</source>
+  <pubdate>2023</pubdate>
+  <volume>146</volume>
+  <issue>9</issue>
+  <fpage>3760</fpage>
+  <lpage>-3769</lpage>
+</bibl>
+
+<bibl id="B15">
+  <title><p>Clinical and molecular features of patients with amyotrophic
+  lateral sclerosis and SOD1 mutations: a monocentric study</p></title>
+  <aug>
+    <au><snm>Gagliardi</snm><fnm>D</fnm></au>
+    <au><snm>Ripellino</snm><fnm>P</fnm></au>
+    <au><snm>Meneri</snm><fnm>M</fnm></au>
+    <au><cnm>{others}</cnm></au>
+  </aug>
+  <source>Frontiers in Neurology</source>
+  <pubdate>2023</pubdate>
+  <volume>14</volume>
+  <fpage>1169689</fpage>
+</bibl>
+
+<bibl id="B16">
+  <title><p>Phenotypic Characterization of ALS-Causing SOD1 Mutations Affecting
+  Polypeptide Length</p></title>
+  <aug>
+    <au><snm>Berdyński</snm><fnm>M</fnm></au>
+    <au><snm>Safranow</snm><fnm>K</fnm></au>
+    <au><snm>Andersen</snm><fnm>PM</fnm></au>
+    <au><snm>Żekanowski</snm><fnm>C</fnm></au>
+  </aug>
+  <source>Human Mutation</source>
+  <pubdate>2025</pubdate>
+  <volume>2025</volume>
+  <fpage>9792233</fpage>
+</bibl>
+
+<bibl id="B17">
+  <title><p>RNA-binding proteins in ALS and FTD: from pathogenic mechanisms to
+  therapeutic insights</p></title>
+  <aug>
+    <au><snm>Rummens</snm><fnm>J</fnm></au>
+    <au><snm>Da Cruz</snm><fnm>S</fnm></au>
+  </aug>
+  <source>Molecular Neurodegeneration</source>
+  <pubdate>2025</pubdate>
+  <volume>20</volume>
+  <fpage>64</fpage>
+</bibl>
+
+<bibl id="B18">
+  <title><p>Genetics and pathogenesis of amyotrophic lateral
+  sclerosis</p></title>
+  <aug>
+    <au><snm>Chia</snm><fnm>R.</fnm></au>
+    <au><snm>Chiò</snm><fnm>A.</fnm></au>
+    <au><snm>Traynor</snm><fnm>B. J.</fnm></au>
+  </aug>
+  <source>Nature Reviews Neurology</source>
+  <pubdate>2018</pubdate>
+  <volume>14</volume>
+  <issue>11</issue>
+  <fpage>651</fpage>
+  <lpage>-664</lpage>
+</bibl>
+
+<bibl id="B19">
+  <title><p>ALS genetics, mechanisms, and therapeutics: where are we
+  now?</p></title>
+  <aug>
+    <au><snm>Mejzini</snm><fnm>B.</fnm></au>
+    <au><snm>Flynn</snm><fnm>L. L.</fnm></au>
+    <au><snm>Pitout</snm><fnm>I. L.</fnm></au>
+    <au><snm>Fletcher</snm><fnm>S.</fnm></au>
+    <au><snm>Wilton</snm><fnm>S. D.</fnm></au>
+    <au><snm>Akkari</snm><fnm>P. A.</fnm></au>
+  </aug>
+  <source>Frontiers in Neuroscience</source>
+  <pubdate>2019</pubdate>
+  <volume>13</volume>
+  <fpage>1310</fpage>
+</bibl>
+
+<bibl id="B20">
+  <title><p>State of play in amyotrophic lateral sclerosis genetics</p></title>
+  <aug>
+    <au><snm>Renton</snm><fnm>A. E.</fnm></au>
+    <au><snm>Chio</snm><fnm>A.</fnm></au>
+    <au><snm>Traynor</snm><fnm>B. J.</fnm></au>
+  </aug>
+  <source>Nature Neuroscience</source>
+  <pubdate>2014</pubdate>
+  <volume>17</volume>
+  <issue>1</issue>
+  <fpage>17</fpage>
+  <lpage>-23</lpage>
+</bibl>
+
+<bibl id="B21">
+  <title><p>Prediagnostic neurofilament light chain levels in amyotrophic
+  lateral sclerosis</p></title>
+  <aug>
+    <au><snm>Bjornevik</snm><fnm>K</fnm></au>
+    <au><snm>Zhang</snm><fnm>Z</fnm></au>
+    <au><snm>O'Reilly</snm><fnm>�J</fnm></au>
+    <au><snm>Berry</snm><fnm>JD</fnm></au>
+    <au><snm>Clish</snm><fnm>CB</fnm></au>
+    <au><snm>Matthews</snm><fnm>P</fnm></au>
+    <au><snm>Schwarzschild</snm><fnm>MA</fnm></au>
+    <au><snm>Cudkowicz</snm><fnm>ME</fnm></au>
+    <au><snm>Weisskopf</snm><fnm>MG</fnm></au>
+    <au><snm>Ascherio</snm><fnm>A</fnm></au>
+  </aug>
+  <source>Neurology</source>
+  <pubdate>2023</pubdate>
+  <volume>101</volume>
+  <issue>1</issue>
+  <fpage>e13</fpage>
+  <lpage>-e23</lpage>
+</bibl>
+
+<bibl id="B22">
+  <title><p>Optimizing pharmacologic treatment for ALS to improve outcomes and
+  quality of life</p></title>
+  <aug>
+    <au><snm>Lynch</snm><fnm>K</fnm></au>
+  </aug>
+  <source>The American Journal of Managed Care</source>
+  <pubdate>2023</pubdate>
+  <volume>29</volume>
+  <issue>7 Suppl</issue>
+  <fpage>S112</fpage>
+  <lpage>-S119</lpage>
+</bibl>
+
+<bibl id="B23">
+  <title><p>Riluzole for amyotrophic lateral sclerosis (ALS)/motor neuron
+  disease (MND)</p></title>
+  <aug>
+    <au><snm>Miller</snm><fnm>RG</fnm></au>
+    <au><snm>Mitchell</snm><fnm>JD</fnm></au>
+    <au><snm>Moore</snm><fnm>DH</fnm></au>
+    <au><snm>Swash</snm><fnm>M</fnm></au>
+  </aug>
+  <source>Cochrane Database of Systematic Reviews</source>
+  <pubdate>2012</pubdate>
+  <issue>3</issue>
+</bibl>
+
+<bibl id="B24">
+  <title><p>Riluzole: real-world evidence supports significant extension of
+  median survival times in patients with amyotrophic lateral
+  sclerosis</p></title>
+  <aug>
+    <au><snm>Hinchcliffe</snm><fnm>M</fnm></au>
+    <au><snm>Smith</snm><fnm>A</fnm></au>
+    <au><cnm>{others}</cnm></au>
+  </aug>
+  <source>Degenerative Neurological and Neuromuscular Disease</source>
+  <pubdate>2020</pubdate>
+  <volume>10</volume>
+  <fpage>111</fpage>
+  <lpage>-118</lpage>
+</bibl>
+
+<bibl id="B25">
+  <title><p>Efficacy of intravenous edaravone in slowing disability progression
+  in patients with amyotrophic lateral sclerosis: an individual patient data
+  meta-analysis</p></title>
+  <aug>
+    <au><snm>Brooks</snm><fnm>BR</fnm></au>
+    <au><snm>Wynn</snm><fnm>D</fnm></au>
+    <au><snm>Mitsumoto</snm><fnm>H</fnm></au>
+    <au><cnm>{others}</cnm></au>
+  </aug>
+  <source>Therapeutic Advances in Neurological Disorders</source>
+  <pubdate>2024</pubdate>
+  <volume>17</volume>
+  <fpage>17562864231220996</fpage>
 </bibl>
 
 </refgrp>
