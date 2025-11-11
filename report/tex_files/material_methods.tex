@@ -1,1 +1,29 @@
+
 \section{Materiales y métodos}
+Para este trabajo se realizó el análisis de la red de interacción proteína-proteína (PPI, protein-protein interaction) del fenotipo HP:0007354 (esclerosis lateral amiotrófica), en donde se utilizaron diferentes herramientas que posibilitaron el estudio de la red. Entre ellas se destacan: 
+\begin{itemize}
+	\item \textbf{HPO}: definida por la Human Gene Ontology organization como un vocabulario estandarizado que utilizan médicos e investigadores para describir de manera uniforme y precisa las anomalías fenotípicas observadas en las enfermedades humanas.
+	
+	\item \textbf{Python}: lenguaje de programación interpretado. Es una herramienta dominante para el parsing (análisis sintáctico) de archivos biológicos complejos y manipulación de grandes volúmenes de datos tabulares mediante bibliotecas como Pandas y Numpy. Que a su vez permite construir y gestionar pipelines (flujos de trabajo) que automatizan análisis complejos.
+	
+	\item \textbf{STRINGdb} (Search Tool for the Retrieval of Interacting Genes/protein) es una base de datos biológica y un servidor web de acceso libre enfocado principalmente en las Interacciones proteína-proteína (PPIs). Esta herramienta es muy útil para integrar las asociaciones funcionales entre las proteínas de un organismo.
+\end{itemize}
+
+
+La implementación se realizó en Python, debido a su versatilidad, simplicidad en la sintaxis y amplia disponibilidad de bibliotecas especializadas, que facilitan tanto la comunicación con las APIs de las bases de datos más utilizadas como la representación gráfica de redes complejas. Específicamente, se utilizaron las siguientes librerías:
+
+\begin{itemize}
+	\item \textbf{Numpy (v. 1.26.4)}: librería esencial para cálculos numéricos y operaciones matriciales.
+	
+	\item \textbf{Matplotlib (v. 3.9.2)}: librería para visualizar datos e imágenes y generar gráficas.
+	
+	\item \textbf{Pandas (v. 2.2.3)}: librería para manipular, limpiar y analizar datos en forma de tablas (DataFrames).
+	
+	\item \textbf{Requests (v. 2.32.3)}: librería para realizar solicitudes HTTP y comunicarse con APIs o servicios web.
+	
+	\item \textbf{Json}: módulo para leer, escribir y procesar datos en formato JSON. Es parte de la biblioteca estándar de Python, por lo que no requiere instalación ni tiene versión propia.
+	
+	\item \textbf{igraph}: librería para crear, analizar y visualizar redes o grafos, con soporte para métricas y tareas adicionales.
+\end{itemize}
+
+El flujo de trabajo diseñado consta de cinco etapas principales que abarcan desde la obtención de genes relacionados con el fenotipo de interés hasta la extracción de conocimiento biológico de la red PPI. Para algunas de las etapas se realizaron múltiples ejecuciones, variando en cada una los parámetros principales. De esta forma, se obtuvieron múltiples combinaciones de resultados, con el objetivo de evaluar qué configuración presentaba los resultados más favorables. Un esquema conceptual del flujo de trabajo puede verse en la Figura 1.
