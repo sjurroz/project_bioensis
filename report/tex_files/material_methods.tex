@@ -32,9 +32,32 @@ En primer lugar, se recopiló la lista de genes asociados al fenotipo de interé
 
 A continuación, mediante la lista de genes, se generó la red PPI para cada una de las dos listas de genes. En este punto propusimos tres posibles umbrales de puntuación para dar lugar a la red: uno laxo, con un valor de 300; otro intermedio, de 700; y el más estricto, igual a 900. Esto permitió comparar cómo varía la estructura de la red en función del nivel de confianza asignado a las interacciones, evaluando si los patrones observados se mantienen consistentes al aumentar el umbral de evidencia requerido. Una vez obtenidas las seis redes, se representan gráficamente mediante la librería Igraph. Para cada una de ellas, se llevó a cabo un pequeño análisis exploratorio inicial, en el cual se midieron distintas propiedades básicas de topología como número de nodos, grado, densidad, centralidad, modularidad y dispersión.
 
-\begin{figure}
+\begin{figure}[!h]
 	\centering
 	\includegraphics[width=0.7\linewidth]{figures/Diagrama_de_flujo_BioSis.png}
 	\caption{Diagrama de trabajo paso a paso}
 	\label{fig:diagramadeflujobiosis}
 \end{figure}
+\newpage
+
+Luego, resultó necesario entender los posibles agrupamientos o clusters que tuvo cada red. Este proceso se llevó a cabo con el objetivo de descubrir grupos de genes altamente conectados entre sí, los cuales podrían corresponder a funciones biológicas muy relacionadas con la ELA. Nuevamente, se propusieron dos estrategias diferentes de agrupamiento, que fueron elegidos por su eficacia en conjuntos pequeños de datos (menos de 150 genes) y  su interpretabilidad clara. \ref{Hardiman2023}
+
+\subsubsection*{Clustering basado en la centralidad de interediacion de enlace (Edge Betweenness Clustering)}
+
+Es un método de detección de comunidades propuesto por Girvan y Newman en el año 2002. Este algoritmo consiste en calcular la centralidad de intermediación para todas las aristas donde se eliminan aquellas con los valores más altos, dicho proceso se hace de manera iterativa con el objetivo de separar la red en subconjuntos mayormente conectados de forma interna.
+
+El proceso termina al obtener la red con agrupamientos que presenten el valor más alto de la modularidad  métrica, la cual cuantifica la calidad de la conexión de los agrupamientos con el resto de la red. Dicha métrica tiene un intervalo [-1,1] donde el valor más cercano o igual a 1 determina que el  agrupamiento está bien definido. \ref{newman2004modularity}
+
+\textbf{Significado de los valores de la modularidad (Q)}
+\begin{itemize}
+	\item \textbf{$Q\approx 1$}  Agrupamiento fuerte y bien definido
+	\item \textbf{$0 < Q < 1$} Partición clara aunque no completamente aislada ya que hay cierta conectividad entre los agrupamientos.
+	\item \textbf{$Q\approx 0$}  Estructura compuesta por conexiones aleatorias.
+	\item \textbf{$-1 < Q < 0$} La partición es peor que el azar, ya que hay más conexiones entre comunidades que dentro de ellas.
+	\item \textbf{$Q\approx -1$} Agrupamiento totalmente incoherente
+\end{itemize}
+
+\subsubsection*{Clustering basado en el algoritmo InfoMap}
+Es un método de detección de comunidades propuesto por Martin Rosvall y Carl T.Bergstrom en el año 2008 que no depende de una métrica estructural predeterminada y detecta comunidades de tamaño variable con submódulos jerárquicos.Este algoritmo detecta los agrupamientos analizando el flujo de información entre nodos usando caminatas aleatorias que simulan el movimiento dentro de una red y eligen el próximo nodo al azar.vspace{1em}
+
+Las múltiples caminatas se utilizan para calcular la cantidad de bits que se necesitan para describir el recorrido, si el recorrido pasó una gran parte dentro de un mismo grupo de nodos se considera una comunidad densamente conectada internamente mientras que, en el caso contrario se considera que hay una conexión más débil entre comunidades.  \ref{rosvall2008infomap}
