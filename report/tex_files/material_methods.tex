@@ -26,15 +26,15 @@ La implementación se realizó en Python, debido a su versatilidad, simplicidad 
 	\item \textbf{igraph}: librería para crear, analizar y visualizar redes o grafos, con soporte para métricas y tareas adicionales.
 \end{itemize}
 
-El flujo de trabajo diseñado consta de cinco etapas principales que abarcan desde la obtención de genes relacionados con el fenotipo de interés hasta la extracción de conocimiento biológico de la red PPI. Para algunas de las etapas se realizaron múltiples ejecuciones, variando en cada una los parámetros principales. De esta forma, se obtuvieron múltiples combinaciones de resultados, con el objetivo de evaluar qué configuración presentaba los resultados más favorables. Un esquema conceptual del flujo de trabajo puede verse en la Figura 1.
-
-\begin{figure}
-	\centering
-	\includegraphics[width=0.7\linewidth]{figures/Diagrama_de_flujo_BioSis.drawio}
-	\caption{Figura 1}
-	\label{fig:diagramadeflujobiosis}
-\end{figure}
+El flujo de trabajo diseñado consta de cinco etapas principales que abarcan desde la obtención de genes relacionados con el fenotipo de interés hasta la extracción de conocimiento biológico de la red PPI. Para algunas de las etapas se realizaron múltiples ejecuciones, variando en cada una los parámetros principales. De esta forma, se obtuvieron múltiples combinaciones de resultados, con el objetivo de evaluar qué configuración presentaba los resultados más favorables. Un esquema conceptual del flujo de trabajo puede verse en la Figura \ref{fig:diagramadeflujobiosis}.
 
 En primer lugar, se recopiló la lista de genes asociados al fenotipo de interés. Para hacerlo, se adoptaron dos enfoques distintos: por un lado, se utilizaron los genes encontrados tras una revisión bibliográfica manua l (Tabla 1); por el otro, se extrajeron mediante una función de STRINGdb a partir de la API de la HPO.
 
 A continuación, mediante la lista de genes, se generó la red PPI para cada una de las dos listas de genes. En este punto propusimos tres posibles umbrales de puntuación para dar lugar a la red: uno laxo, con un valor de 300; otro intermedio, de 700; y el más estricto, igual a 900. Esto permitió comparar cómo varía la estructura de la red en función del nivel de confianza asignado a las interacciones, evaluando si los patrones observados se mantienen consistentes al aumentar el umbral de evidencia requerido. Una vez obtenidas las seis redes, se representan gráficamente mediante la librería Igraph. Para cada una de ellas, se llevó a cabo un pequeño análisis exploratorio inicial, en el cual se midieron distintas propiedades básicas de topología como número de nodos, grado, densidad, centralidad, modularidad y dispersión.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{figures/Diagrama_de_flujo_BioSis.png}
+	\caption{Diagrama de trabajo paso a paso}
+	\label{fig:diagramadeflujobiosis}
+\end{figure}
