@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{25}
+\begin{thebibliography}{27}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -362,7 +362,7 @@ doi:\doiurl{10.1038/nn.3584}
 \begin{barticle}
 \bauthor{\bsnm{Bjornevik}, \binits{K.}},
 \bauthor{\bsnm{Zhang}, \binits{Z.}},
-\bauthor{\bsnm{O'Reilly}, \binits{A.J.}},
+\bauthor{\bsnm{O'Reilly}, \binits{Ã.J.}},
 \bauthor{\bsnm{Berry}, \binits{J.D.}},
 \bauthor{\bsnm{Clish}, \binits{C.B.}},
 \bauthor{\bsnm{Matthews}, \binits{P.}},
@@ -439,6 +439,35 @@ doi:\doiurl{10.2147/DNND.S268523}
 \bfpage{17562864231220996}
 (\byear{2024}).
 doi:\doiurl{10.1177/17562864231220996}
+\end{barticle}
+\endbibitem
+
+%%% 26
+\bibitem{newman2004modularity}
+\begin{barticle}
+\bauthor{\bsnm{Newman}, \binits{M.E.J.}},
+\bauthor{\bsnm{Girvan}, \binits{M.}}:
+\batitle{Finding and evaluating community structure in networks}.
+\bjtitle{Physical Review E}
+\bvolume{69}(\bissue{2}),
+\bfpage{026113}
+(\byear{2004}).
+doi:\doiurl{10.1103/PhysRevE.69.026113}
+\end{barticle}
+\endbibitem
+
+%%% 27
+\bibitem{rosvall2008infomap}
+\begin{barticle}
+\bauthor{\bsnm{Rosvall}, \binits{M.}},
+\bauthor{\bsnm{Bergstrom}, \binits{C.T.}}:
+\batitle{Maps of information flow reveal community structure in complex
+  networks}.
+\bjtitle{Proceedings of the National Academy of Sciences}
+\bvolume{105}(\bissue{4}),
+\bfpage{1118}--\blpage{1123}
+(\byear{2008}).
+doi:\doiurl{10.1073/pnas.0706851105}
 \end{barticle}
 \endbibitem
 
@@ -841,6 +870,38 @@ doi:\doiurl{10.1177/17562864231220996}
   <pubdate>2024</pubdate>
   <volume>17</volume>
   <fpage>17562864231220996</fpage>
+</bibl>
+
+<bibl id="B26">
+  <title><p>Finding and evaluating community structure in networks</p></title>
+  <aug>
+    <au><snm>Newman</snm><fnm>M. E. J.</fnm></au>
+    <au><snm>Girvan</snm><fnm>M.</fnm></au>
+  </aug>
+  <source>Physical Review E</source>
+  <publisher>American Physical Society</publisher>
+  <pubdate>2004</pubdate>
+  <volume>69</volume>
+  <issue>2</issue>
+  <fpage>026113</fpage>
+  <url>https://journals.aps.org/pre/abstract/10.1103/PhysRevE.69.026113</url>
+</bibl>
+
+<bibl id="B27">
+  <title><p>Maps of information flow reveal community structure in complex
+  networks</p></title>
+  <aug>
+    <au><snm>Rosvall</snm><fnm>M</fnm></au>
+    <au><snm>Bergstrom</snm><fnm>CT</fnm></au>
+  </aug>
+  <source>Proceedings of the National Academy of Sciences</source>
+  <publisher>National Academy of Sciences</publisher>
+  <pubdate>2008</pubdate>
+  <volume>105</volume>
+  <issue>4</issue>
+  <fpage>1118</fpage>
+  <lpage>-1123</lpage>
+  <url>https://doi.org/10.1073/pnas.0706851105</url>
 </bibl>
 
 </refgrp>
