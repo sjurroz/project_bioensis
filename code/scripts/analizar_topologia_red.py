@@ -7,10 +7,10 @@ Descripción:
     produce un único archivo JSON con resultados.
 
 Entrada:
-    resultados/redes/<modo>_score<score>/red_<modo>_score<score>.txt
+    results/redes/<modo>_score<score>/red_<modo>_score<score>.txt
 
 Salida:
-    resultados/redes/<modo>_score<score>/topologia/metricas_topologicas.json
+    results/redes/<modo>_score<score>/topologia/metricas_topologicas.json
 
 Contenido del JSON:
     {
@@ -26,8 +26,6 @@ Contenido del JSON:
         "tamano_medio_comunidad": float,
         "modularidad_preliminar": float | None
     }
-
-Estas métricas sirven como diagnóstico rápido antes de clustering avanzado.
 """
 
 import json
@@ -35,6 +33,8 @@ from pathlib import Path
 
 import networkx as nx
 import pandas as pd
+
+from paths import PROJECT_ROOT, RESULTADOS_DIR
 
 
 # ============================================================
@@ -56,6 +56,7 @@ def _calcular_metricas_globales(G: nx.Graph) -> dict:
     n_nodos = G.number_of_nodes()
     n_aristas = G.number_of_edges()
 
+    # Caso red vacía
     if n_nodos == 0:
         return {
             "n_nodos": 0,
@@ -68,7 +69,7 @@ def _calcular_metricas_globales(G: nx.Graph) -> dict:
             "longitud_camino_media_gc": None,
             "n_comunidades": 0,
             "tamano_medio_comunidad": 0.0,
-            "modularidad_preliminar": None
+            "modularidad_preliminar": None,
         }
 
     grados = dict(G.degree())
@@ -86,8 +87,8 @@ def _calcular_metricas_globales(G: nx.Graph) -> dict:
         diametro = nx.diameter(GC)
         camino_medio = round(nx.average_shortest_path_length(GC), 3)
     else:
-        diametro = 0
-        camino_medio = 0.0
+        diametro = None
+        camino_medio = None
 
     # comunidades preliminares
     try:
@@ -118,29 +119,25 @@ def _calcular_metricas_globales(G: nx.Graph) -> dict:
 
 
 # ============================================================
-# FUNCIÓN PÚBLICA
+# FUNCIÓN PÚBLICA PRINCIPAL
 # ============================================================
 
 def analizar_topologia(modo: str, score: int):
     """
-    Análisis topológico preliminar de una red generada previamente por
-    generar_red.py. Guarda las métricas en un archivo JSON.
+    Analiza la red generada previamente por generar_red.py.
+    Guarda métricas topológicas en JSON (1 archivo por red).
 
-    Este módulo debe ser invocado únicamente desde pipeline.py
-    mediante:
-
-        analizar_topologia(modo, score)
+    logging compacto y consistente con el pipeline.
     """
 
-    BASE = Path(__file__).resolve().parents[2]
-
-    path_red = BASE / "resultados" / "redes" / f"{modo}_score{score}" / f"red_{modo}_score{score}.txt"
-    out_dir = BASE / "resultados" / "redes" / f"{modo}_score{score}" / "topologia"
+    path_red = RESULTADOS_DIR / "redes" / f"{modo}_score{score}" / f"red_{modo}_score{score}.txt"
+    out_dir = RESULTADOS_DIR / "redes" / f"{modo}_score{score}" / "topologia"
     out_dir.mkdir(parents=True, exist_ok=True)
 
     salida_json = out_dir / "metricas_topologicas.json"
 
-    print(f"▶ Analizando topología: {modo}_score{score}")
+    # logging
+    print(f"• Topología preliminar... ", end="", flush=True)
 
     G = _cargar_red(path_red)
     metricas = _calcular_metricas_globales(G)
@@ -149,8 +146,8 @@ def analizar_topologia(modo: str, score: int):
         json.dump(metricas, f, indent=4)
 
     try:
-        rel = salida_json.relative_to(BASE)
+        rel = salida_json.relative_to(PROJECT_ROOT)
     except ValueError:
         rel = salida_json
 
-    print(f"    [OK] guardado en: {rel}")
+    print("✓ OK")
