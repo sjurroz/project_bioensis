@@ -1,9 +1,8 @@
 #Cache de Python
-__pycache__/
+**/__pycache__/
 *.py[cod]
 *$py.class
-.DS_Store
-*/.DS_Store
+
 
 # Entorno virtual
 .venv/
@@ -13,6 +12,6 @@ env/
 # Configuracion local
 *.env
 
-# Store
+# Archivos Sistema
 .DS_Store
 */.DS_Store
