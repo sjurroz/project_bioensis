@@ -4,3 +4,15 @@ __pycache__/
 *$py.class
 .DS_Store
 */.DS_Store
+
+# Entorno virtual
+.venv/
+venv/
+env/
+
+# Configuracion local
+*.env
+
+# Store
+.DS_Store
+*/.DS_Store
