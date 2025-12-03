@@ -1,6 +1,15 @@
 #!/bin/bash
 set -e
 
+# ==============================
+# Comprobación: NO ejecutar como root
+# ==============================
+if [ "$(id -u)" -eq 0 ]; then
+    echo "❌ ERROR: este script no puede ejecutarse como root."
+    echo "No se permite asumir permisos de administrador."
+    exit 1
+fi
+
 echo "======================================="
 echo " Ejecutando pipeline completo de redes"
 echo "======================================="
