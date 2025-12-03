@@ -9,22 +9,19 @@ Descripción:
         2. Análisis topológico preliminar
         3. Clustering (Greedy, Girvan–Newman, Infomap)
         4. Análisis funcional ORA por cada clúster
-        5. Comparativa ORA entre GO, KEGG y Reactome por clúster
 
-    Este es el ÚNICO archivo que debe ejecutarse directamente:
-
-        python scripts/pipeline.py
-
-    Todos los demás archivos en /scripts/ son módulos internos.
+    5. Generación de tablas comparativas para las distintas combinaciones exploradas
 """
+import random
+
+import numpy as np
 
 from generar_red import generar_red
 from analizar_topologia_red import analizar_topologia
 from clustering import ejecutar_clustering
 from analisis_funcional_clusters import analisis_funcional_clusters
-from analisis_funcional_comparativo import analisis_funcional_comparativo
+from resumen_clustering import generar_tabla_clusters_avanzada
 from paths import LISTA_GENES_MANUAL
-
 
 # ============================================================
 # CONFIGURACIÓN GENERAL
@@ -34,12 +31,27 @@ HPO_TERM = "HP:0007354"
 MODOS = ["hpo", "manual"]
 SCORES = [300, 700, 900]
 
+# Diccionarios para almacenar resultados
+tabla_clusters = {
+    "hpo": {300: {}, 700: {}, 900: {}},
+    "manual": {300: {}, 700: {}, 900: {}},
+}
+
+# Semilla para garantizar reproducibilidad
+SEED = 42
+random.seed(SEED)
+np.random.seed(SEED)
 
 # ============================================================
 # PIPELINE COMPLETO
 # ============================================================
 
 def pipeline():
+
+    tabla_clusters = {
+        "hpo": {300: {}, 700: {}, 900: {}},
+        "manual": {300: {}, 700: {}, 900: {}},
+    }
 
     for modo in MODOS:
         for score in SCORES:
@@ -74,6 +86,9 @@ def pipeline():
             # =====================================================
             res_clust = ejecutar_clustering(modo, score)
 
+            # Guardar número de clusters para la tabla comparativa
+            tabla_clusters[modo][score] = res_clust
+
             print("      - greedy_modularity:".ljust(28), f"{res_clust['greedy_modularity']} clusters")
             print("      - edge_betweenness:".ljust(28), f"{res_clust['edge_betweenness']} clusters")
             print("      - infomap:".ljust(28), f"{res_clust['infomap']} clusters")
@@ -83,14 +98,20 @@ def pipeline():
             # =====================================================
             res_ora = analisis_funcional_clusters(modo, score)
 
-            print("      - greedy_modularity:".ljust(28), f"{res_ora['greedy_modularity']} ORA OK")
-            print("      - edge_betweenness:".ljust(28), f"{res_ora['edge_betweenness']} ORA OK")
-            print("      - infomap:".ljust(28), f"{res_ora['infomap']} ORA OK")
+            print("      - greedy_modularity:".ljust(28), f"{res_ora['greedy_modularity']} ORA ✓ OK")
+            print("      - edge_betweenness:".ljust(28), f"{res_ora['edge_betweenness']} ORA ✓ OK")
+            print("      - infomap:".ljust(28), f"{res_ora['infomap']} ORA ✓ OK")
 
-            # =====================================================
-            # 5) COMPARATIVA GO vs KEGG vs REACTOME
-            # =====================================================
-            analisis_funcional_comparativo(modo, score)
+    # =====================================================
+    # 5) TABLAS COMPARATIVAS
+    # =====================================================
+
+    print("\n-------------------------------------------------------------------------")
+    print(" Generando tablas comparativas para las distinas configuraciones")
+    print("\n-------------------------------------------------------------------------")
+
+    generar_tabla_clusters_avanzada("hpo", tabla_clusters["hpo"])
+    generar_tabla_clusters_avanzada("manual", tabla_clusters["manual"])
 
 
 # ============================================================
