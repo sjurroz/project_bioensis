@@ -10,7 +10,7 @@ Entrada:
     results/redes/<modo>_score<score>/red_<modo>_score<score>.txt
 
 Salida:
-    results/redes/<modo>_score<score>/topologia/metricas_topologicas.json
+    results/redes/<modo>_score<score>/topologia/topologia_red_<modo>_score<score>.json
 
 Contenido del JSON:
     {
@@ -134,7 +134,7 @@ def analizar_topologia(modo: str, score: int):
     out_dir = RESULTADOS_DIR / "redes" / f"{modo}_score{score}" / "topologia"
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    salida_json = out_dir / "metricas_topologicas.json"
+    salida_json = out_dir / f"topologia_red_{modo}_score{score}.json"
 
     # logging
     print(f"• Topología preliminar... ", end="", flush=True)

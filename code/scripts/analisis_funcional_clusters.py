@@ -18,7 +18,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import gseapy as gp
 
-from paths import PROJECT_ROOT, RESULTADOS_DIR
+from paths import RESULTADOS_DIR
 
 
 # ============================================================
@@ -85,9 +85,9 @@ def analisis_funcional_clusters(modo: str, score: int):
     out_base.mkdir(parents=True, exist_ok=True)
 
     algoritmos = {
-        "greedy_modularity": clustering_dir / "greedy_modularity" / "resultados.json",
-        "edge_betweenness": clustering_dir / "edge_betweenness" / "resultados.json",
-        "infomap": clustering_dir / "infomap" / "resultados.json",
+        "greedy_modularity": clustering_dir / "greedy_modularity" / f"greedy_modularity_{modo}_score{score}.json",
+        "edge_betweenness": clustering_dir / "edge_betweenness" / f"edge_betweenness_{modo}_score{score}.json",
+        "infomap": clustering_dir / "infomap" / f"infomap_{modo}_score{score}.json",
     }
 
     resumen_oras = {}
@@ -105,14 +105,14 @@ def analisis_funcional_clusters(modo: str, score: int):
 
         n_ora = 0
         for idx, cluster in enumerate(clusters):
-            if len(cluster) < 5:
+            if len(cluster) < 3:
                 continue
 
             genes = [g.upper() for g in cluster]
             cdir = out_alg / f"cluster_{idx}"
             cdir.mkdir(parents=True, exist_ok=True)
 
-            ora_base(genes, "GO_Biological_Process_2021", cdir / "GO")
+            ora_base(genes, "GO_Biological_Process_2023", cdir / "GO")
             ora_base(genes, "KEGG_2021_Human", cdir / "KEGG")
             ora_base(genes, "Reactome_2022", cdir / "Reactome")
 
