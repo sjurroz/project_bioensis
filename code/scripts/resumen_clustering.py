@@ -93,7 +93,7 @@ def generar_tabla_clusters_avanzada(modo: str, resumen_clusters: dict):
     resumen_clusters tiene la forma:
         {
             score: {
-                "greedy_modularity": <n_clusters>,
+                "fast_greedy": <n_clusters>,
                 "edge_betweenness": <n_clusters>,
                 "infomap": <n_clusters>,
             },
@@ -102,7 +102,7 @@ def generar_tabla_clusters_avanzada(modo: str, resumen_clusters: dict):
     Esta función añade media_GO y construye la tabla final.
     """
 
-    algoritmos = ["infomap", "greedy_modularity", "edge_betweenness"]
+    algoritmos = ["infomap", "fast_greedy", "edge_betweenness"]
 
     filas = []
 
@@ -114,7 +114,7 @@ def generar_tabla_clusters_avanzada(modo: str, resumen_clusters: dict):
             # cargar clusters
             path_json = (
                 RESULTADOS_DIR / "redes" / f"{modo}_score{score}"
-                / "clustering" / alg / "resultados.json"
+                / "clustering" / alg / f"{alg}_{modo}_score{score}.json"
             )
             clusters = cargar_clusters(path_json)
 

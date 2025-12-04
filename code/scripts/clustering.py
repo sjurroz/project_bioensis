@@ -54,7 +54,7 @@ def preparar_rutas(modo: str, score: int):
     base_dir = RESULTADOS_DIR / "redes" / f"{modo}_score{score}"
     clustering_dir = base_dir / "clustering"
 
-    greedy_dir = clustering_dir / "greedy_modularity"
+    greedy_dir = clustering_dir / "fast_greedy"
     edge_dir = clustering_dir / "edge_betweenness"
     infomap_dir = clustering_dir / "infomap"
 
@@ -171,12 +171,12 @@ def ejecutar_clustering(modo: str, score: int):
     """
     Ejecuta los 3 algoritmos sobre la red y devuelve:
         {
-            "greedy_modularity": n_clusters,
+            "fast_greedy": n_clusters,
             "edge_betweenness": n_clusters,
             "infomap": n_clusters
         }
     """
-    print(f"• Clustering (GM / EB / I)...", end="")
+    print(f"• Clustering (FG / EB / I)...", end="")
 
     base = RESULTADOS_DIR / "redes" / f"{modo}_score{score}"
     path_red = base / f"red_{modo}_score{score}.txt"
@@ -195,26 +195,26 @@ def ejecutar_clustering(modo: str, score: int):
 
     guardar_json(
         {
-            "algorithm": "greedy_modularity",
+            "algorithm": "fast_greedy",
             "modularity": Q,
             "communities": [sorted(list(c)) for c in communities],
         },
         greedy_dir,
-        f"greedy_modularity_{modo}_score{score}.json",
+        f"fast_greedy_{modo}_score{score}.json",
     )
     # PNG
-    plot_graph(G, communities, f"Algoritmo: Greedy modularity\nRed: {modo} | Score: {score}", greedy_dir, f"greedy_modularity_{modo}_score{score}.png")
+    plot_graph(G, communities, f"Algoritmo: Greedy modularity\nRed: {modo} | Score: {score}", greedy_dir, f"fast_greedy_{modo}_score{score}.png")
 
-    resumen["greedy_modularity"] = len(communities)
+    resumen["fast_greedy"] = len(communities)
 
     # --------------------------------------------------------
-    # 2) Girvan–Newman (edge betweenness)
+    # 2) Edge betweenness
     # --------------------------------------------------------
     best_coms, best_Q, Q_list = girvan_newman_full(G)
 
     guardar_json(
         {
-            "algorithm": "edge_betweenness_girvan_newman",
+            "algorithm": "edge_betweenness",
             "best_modularity": best_Q,
             "communities": [sorted(list(c)) for c in best_coms],
             "modularity_trace": Q_list,

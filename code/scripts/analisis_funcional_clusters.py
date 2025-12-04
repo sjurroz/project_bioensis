@@ -85,7 +85,7 @@ def analisis_funcional_clusters(modo: str, score: int):
     out_base.mkdir(parents=True, exist_ok=True)
 
     algoritmos = {
-        "greedy_modularity": clustering_dir / "greedy_modularity" / f"greedy_modularity_{modo}_score{score}.json",
+        "fast_greedy": clustering_dir / "fast_greedy" / f"fast_greedy_{modo}_score{score}.json",
         "edge_betweenness": clustering_dir / "edge_betweenness" / f"edge_betweenness_{modo}_score{score}.json",
         "infomap": clustering_dir / "infomap" / f"infomap_{modo}_score{score}.json",
     }

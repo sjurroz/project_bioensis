@@ -89,7 +89,7 @@ def pipeline():
             # Guardar número de clusters para la tabla comparativa
             tabla_clusters[modo][score] = res_clust
 
-            print("      - greedy_modularity:".ljust(28), f"{res_clust['greedy_modularity']} clusters")
+            print("      - fast_greedy:".ljust(28), f"{res_clust['fast_greedy']} clusters")
             print("      - edge_betweenness:".ljust(28), f"{res_clust['edge_betweenness']} clusters")
             print("      - infomap:".ljust(28), f"{res_clust['infomap']} clusters")
 
@@ -98,7 +98,7 @@ def pipeline():
             # =====================================================
             res_ora = analisis_funcional_clusters(modo, score)
 
-            print("      - greedy_modularity:".ljust(28), f"{res_ora['greedy_modularity']} ORA ✓ OK")
+            print("      - fast_greedy:".ljust(28), f"{res_ora['fast_greedy']} ORA ✓ OK")
             print("      - edge_betweenness:".ljust(28), f"{res_ora['edge_betweenness']} ORA ✓ OK")
             print("      - infomap:".ljust(28), f"{res_ora['infomap']} ORA ✓ OK")
 
