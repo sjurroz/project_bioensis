@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{27}
+\begin{thebibliography}{28}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -471,6 +471,21 @@ doi:\doiurl{10.1073/pnas.0706851105}
 \end{barticle}
 \endbibitem
 
+%%% 28
+\bibitem{clauset2004finding}
+\begin{barticle}
+\bauthor{\bsnm{Clauset}, \binits{A.}},
+\bauthor{\bsnm{Newman}, \binits{M.E.J.}},
+\bauthor{\bsnm{Moore}, \binits{C.}}:
+\batitle{Finding community structure in very large networks}.
+\bjtitle{Physical Review E}
+\bvolume{70}(\bissue{6}),
+\bfpage{066111}
+(\byear{2004}).
+doi:\doiurl{10.1103/PhysRevE.70.066111}
+\end{barticle}
+\endbibitem
+
 \end{thebibliography}
 
 \newcommand{\BMCxmlcomment}[1]{}
@@ -902,6 +917,21 @@ doi:\doiurl{10.1073/pnas.0706851105}
   <fpage>1118</fpage>
   <lpage>-1123</lpage>
   <url>https://doi.org/10.1073/pnas.0706851105</url>
+</bibl>
+
+<bibl id="B28">
+  <title><p>Finding community structure in very large networks</p></title>
+  <aug>
+    <au><snm>Clauset</snm><fnm>A</fnm></au>
+    <au><snm>Newman</snm><fnm>M. E. J.</fnm></au>
+    <au><snm>Moore</snm><fnm>C</fnm></au>
+  </aug>
+  <source>Physical Review E</source>
+  <publisher>American Physical Society</publisher>
+  <pubdate>2004</pubdate>
+  <volume>70</volume>
+  <issue>6</issue>
+  <fpage>066111</fpage>
 </bibl>
 
 </refgrp>
