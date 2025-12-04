@@ -17,14 +17,21 @@ echo "======================================="
 BASE_DIR="$(pwd)"
 VENV_DIR="$BASE_DIR/venv"
 
-# Activar entorno virtual
-if [ -f "$VENV_DIR/bin/activate" ]; then
-    source "$VENV_DIR/bin/activate"
+# Detectar Windows (Git Bash, MSYS, Cygwin)
+if [[ "$OSTYPE" == "msys" || "$OSTYPE" == "cygwin" ]]; then
+    ACTIVATE_PATH="$VENV_DIR/Scripts/activate"
 else
-    echo "❌ ERROR: no existe el entorno virtual en venv/"
+    ACTIVATE_PATH="$VENV_DIR/bin/activate"
+fi
+
+if [ ! -f "$ACTIVATE_PATH" ]; then
+    echo "❌ ERROR: no existe el entorno virtual esperado:"
+    echo "   $ACTIVATE_PATH"
     echo "Ejecuta primero: ./setup.sh"
     exit 1
 fi
+
+source "$ACTIVATE_PATH"
 
 # Ejecutar pipeline desde el directorio scripts/
 python scripts/pipeline.py
