@@ -14,7 +14,7 @@ A partir de la aplicación de la metodología, para el caso de la lista creada a
 		
 		\hline
 		
-		\textbf{ID} & \textbf{\textit{Edge Betweenness}} & \textbf{\textit{Fast Greedy}} & \textbf{\textit{InfoMap}} \\ \hline
+		\textbf{ID} & \textbf{\textit{Edge Betweenness}} & \textbf{\textit{Infomap}} & \textbf{\textit{Fast Greedy}} \\ \hline
 		
 		\textbf{300} & 12 & 2 & 4 \\ \hline
 		
@@ -41,7 +41,7 @@ A partir de la aplicación de la metodología, para el caso de la lista creada a
 		
 		\hline
 		
-		\textbf{ID} & \textbf{\textit{Edge Betweenness}} & \textbf{\textit{Fast Greedy}} & \textbf{\textit{InfoMap}} \\ \hline
+		\textbf{ID} & \textbf{\textit{Edge Betweenness}} & \textbf{\textit{Infomap}} & \textbf{\textit{Fast Greedy}} \\ \hline
 		
 		\textbf{300} & 2 & 2 & 4 \\ \hline
 		
@@ -58,4 +58,11 @@ A partir de la aplicación de la metodología, para el caso de la lista creada a
 
 Como se muestra en las tablas, el análisis de las redes mostró un balance óptimo al utilizar el score de \textbf{700}. En contraste el umbral de 300 generó una red con una estructura laxa, mientras que el score 900 resultó estricto, limitando las interacciones. 
 
-En la figura 1.a y 1.b se ilustra el rendimiento de los  métodos de agrupamiento utilizados. En ella se revela que el algoritmo de Edge Betweenness ofreció los resultados más favorables, tanto para la red generada manualmente como para la basada en HPO.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{figures/COMPARATIVA DE ALGORITMOS DE AGRUPAMIENTO.png}
+	\caption{Esquema conceptual del flujo de trabajo.}
+	\label{fig:diagramadeflujobiosis}
+\end{figure}
+
+En la figura se ilustra el rendimiento de los  métodos de agrupamiento utilizados. En ella se revela que el algoritmo de Edge Betweenness ofreció los resultados más favorables, tanto para la red generada manualmente como para la basada en HPO.

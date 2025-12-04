@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.26)  4 DEC 2025 20:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.26)  4 DEC 2025 20:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -529,12 +529,32 @@ Overfull \hbox (34.0858pt too wide) in paragraph at lines 48--63
 LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 17.
 
+
+LaTeX Warning: File `figures/COMPARATIVA DE ALGORITMOS DE AGRUPAMIENTO.png' not
+ found on input line 63.
+
+
+! Package pdftex.def Error: File `figures/COMPARATIVA DE ALGORITMOS DE AGRUPAMI
+ENTO.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.63 ...ARATIVA DE ALGORITMOS DE AGRUPAMIENTO.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 ) (tex_files/discusion.tex [6]) (tex_files/conclusiones.tex) (report.bbl
+[7]
 LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <7> not available
 (Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 254.
 
-
-[7]) 
+) 
 AED: lastpage setting LastPage
 [8] (report.aux)
  ***********
@@ -556,13 +576,13 @@ Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: A3EA61EFFBF3D2DE331C9EED6C20E6BE;629.
  ) 
 Here is how much of TeX's memory you used:
- 11781 strings out of 474486
- 186991 string characters out of 5743755
- 1941542 words of memory out of 5000000
- 33825 multiletter control sequences out of 15000+600000
+ 11812 strings out of 474486
+ 188893 string characters out of 5743755
+ 1940542 words of memory out of 5000000
+ 33855 multiletter control sequences out of 15000+600000
  568075 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 85i,11n,79p,1255b,713s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 85i,11n,79p,1255b,715s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\ernes\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1000.pk><C:/Users/ernes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><C:/Users/ernes/AppData/Local/Programs/MiKTeX/fonts/type1/publ
@@ -580,9 +600,9 @@ lic/amsfonts/cm/cmsy8.pfb><C:/Users/ernes/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/public/amsfonts/cm/cmti10.pfb><C:/Users/ernes/AppData/Local/Programs/MiKTe
 X/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/ernes/AppData/Local/Progr
 ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on report.pdf (8 pages, 273134 bytes).
+Output written on report.pdf (8 pages, 276210 bytes).
 PDF statistics:
- 265 PDF objects out of 1000 (max. 8388607)
- 52 named destinations out of 1000 (max. 500000)
+ 266 PDF objects out of 1000 (max. 8388607)
+ 53 named destinations out of 1000 (max. 500000)
  54 words of extra memory for PDF output out of 10000 (max. 10000000)
 
