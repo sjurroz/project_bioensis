@@ -125,24 +125,32 @@ fi
 if [ "$INFOMAP_OK" = false ]; then
     msg "7) Compilando Infomap localmente (sin sudo)"
 
-    mkdir -p "$SOFTWARE_DIR"
-    cd "$SOFTWARE_DIR"
+    # Detectar Windows (MSYS2 / Git Bash / Cygwin)
+    if [[ "$OSTYPE" == "msys" || "$OSTYPE" == "cygwin" ]]; then
+        echo "⚠️ Infomap no puede compilarse automáticamente en Windows."
+        echo "⚠️ Saltando compilación. Infomap quedará NO instalado."
+        cd "$BASE_DIR"
+    else
+        # Compilación normal para macOS / Linux
+        mkdir -p "$SOFTWARE_DIR"
+        cd "$SOFTWARE_DIR"
 
-    if [ ! -d "infomap_src" ]; then
-        git clone https://github.com/mapequation/infomap.git infomap_src
+        if [ ! -d "infomap_src" ]; then
+            git clone https://github.com/mapequation/infomap.git infomap_src
+        fi
+
+        cd infomap_src
+        mkdir -p build
+        cd build
+
+        cmake .. -DCMAKE_INSTALL_PREFIX="$VENV_DIR"
+        make -j4
+        make install
+
+        cd "$BASE_DIR"
+
+        echo "✓ Infomap compilado e instalado dentro del entorno virtual"
     fi
-
-    cd infomap_src
-    mkdir -p build
-    cd build
-
-    cmake .. -DCMAKE_INSTALL_PREFIX="$VENV_DIR"
-    make -j4
-    make install
-
-    cd "$BASE_DIR"
-
-    echo "✓ Infomap compilado e instalado dentro del entorno virtual"
 fi
 
 # --------------------------------------
