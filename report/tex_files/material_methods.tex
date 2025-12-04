@@ -2,6 +2,8 @@
 \section{Materiales y métodos}
 Para este trabajo se realizó un análisis exhaustivo de la red de interacción proteína-proteína (PPI, \textit{protein-protein interaction}) del fenotipo de interés, en donde se utilizaron diferentes herramientas que posibilitaron el estudio de la red. Entre ellas destaca STRING (\textit{Search Tool for the Retrieval of Interacting Genes/protein}), una base de datos biológica y un servidor web de acceso libre enfocado principalmente en las PPIs. Esta herramienta es útil para integrar las asociaciones funcionales entre las proteínas de un organismo.
 
+A su vez se utilizó HPO (Human Gene Ontology), un vocabulario estandarizado que utilizan médicos e investigadores para describir de manera uniforme y precisa anomalías fenotípicas observadas en enfermedades humanas. 
+
 La implementación se realizó en Python, debido a su versatilidad, simplicidad en la sintaxis y amplia disponibilidad de bibliotecas especializadas, que facilitan tanto la comunicación con las APIs de las bases de datos más utilizadas como la representación gráfica de redes complejas. Específicamente, se utilizaron las siguientes librerías:
 
 \begin{itemize}
@@ -18,7 +20,7 @@ La implementación se realizó en Python, debido a su versatilidad, simplicidad 
 	\item \texttt{NetworkX} (v 3.6.0): librería para crear, analizar y visualizar redes o grafos, con soporte para métricas y tareas adicionales.
 \end{itemize}
 
-El flujo de trabajo diseñado (\autoref{fig:diagramadeflujobiosis}) abarca desde la obtención de genes relacionados con el fenotipo de interés hasta la extracción de conocimiento biológico de la red PPI. Para algunas de las etapas se realizaron múltiples ejecuciones, variando en cada una los parámetros principales. De esta forma, se obtuvieron múltiples combinaciones de resultados, con el objetivo de evaluar qué configuración presentaba los resultados más favorables para luego profundizar sobre ella.
+El flujo de trabajo diseñado (\autoref{fig:diagramadeflujobiosis}) consta de cinco etapas que abarcan desde la obtención de genes relacionados con el fenotipo de interés hasta la extracción de conocimiento biológico de la red PPI. Para algunas de las etapas se realizaron múltiples ejecuciones, variando en cada una los parámetros principales. De esta forma, se obtuvieron múltiples combinaciones de resultados, con el objetivo de evaluar qué configuración presentaba los resultados más favorables para luego profundizar sobre ella.Un esquema conceptual del flujo de trabajo puede verse en la Figura 1. 
 
 \begin{figure}[h!]
 	\centering

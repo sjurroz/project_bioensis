@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.26)  4 DEC 2025 14:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.26)  4 DEC 2025 14:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -507,19 +507,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--44
 []|\OT1/cmss/m/n/8 Procesos neu-rode-gen-er-a-
  []
 
-[2]) (tex_files/material_methods.tex
-<figures/Diagrama_de_flujo_BioSis.png, id=103, 944.52875pt x 613.29124pt>
+[2]) (tex_files/material_methods.tex [3]
+<figures/Diagrama_de_flujo_BioSis.png, id=114, 944.52875pt x 613.29124pt>
 File: figures/Diagrama_de_flujo_BioSis.png Graphic file (type png)
 <use figures/Diagrama_de_flujo_BioSis.png>
 Package pdftex.def Info: figures/Diagrama_de_flujo_BioSis.png  used on input li
-ne 25.
+ne 27.
 (pdftex.def)             Requested size: 252.6989pt x 164.07483pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[3] [4 <./figures/Diagrama_de_flujo_BioSis.png>]
-Overfull \hbox (34.0858pt too wide) in paragraph at lines 46--61
+ [4 <./figures/Diagrama_de_flujo_BioSis.png>]
+Overfull \hbox (34.0858pt too wide) in paragraph at lines 48--63
  [][] 
  []
 
@@ -546,11 +542,11 @@ Package rerunfilecheck Info: File `report.out' has not changed.
 Here is how much of TeX's memory you used:
  11775 strings out of 474486
  186868 string characters out of 5743755
- 1942542 words of memory out of 5000000
+ 1943542 words of memory out of 5000000
  33822 multiletter control sequences out of 15000+600000
  568075 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 85i,11n,79p,1255b,711s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 85i,11n,79p,1255b,713s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\ernes\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1000.pk><C:/Users/ernes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><C:/Users/ernes/AppData/Local/Programs/MiKTeX/fonts/type1/publ
@@ -568,7 +564,7 @@ lic/amsfonts/cm/cmsy8.pfb><C:/Users/ernes/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/public/amsfonts/cm/cmti10.pfb><C:/Users/ernes/AppData/Local/Programs/MiKTe
 X/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/ernes/AppData/Local/Progr
 ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on report.pdf (7 pages, 268866 bytes).
+Output written on report.pdf (7 pages, 268953 bytes).
 PDF statistics:
  258 PDF objects out of 1000 (max. 8388607)
  49 named destinations out of 1000 (max. 500000)
