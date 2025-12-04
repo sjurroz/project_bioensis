@@ -25,12 +25,14 @@ import io
 import json
 from pathlib import Path
 
+import matplotlib
 import requests
 import pandas as pd
 import networkx as nx
 import matplotlib.pyplot as plt
+matplotlib.use("Agg")
 
-from paths import PROJECT_ROOT, RESULTADOS_DIR
+from paths import RESULTADOS_DIR
 
 
 # ============================================================
