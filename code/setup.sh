@@ -59,8 +59,22 @@ if [ ! -d "$VENV_DIR" ]; then
     $PY -m venv "$VENV_DIR"
 fi
 
-# Activación automática
-source "$VENV_DIR/bin/activate"
+# Activación automática (Windows vs Unix)
+if [[ "$OSTYPE" == "msys" || "$OSTYPE" == "cygwin" ]]; then
+    # Windows (Git Bash / MINGW / MSYS)
+    ACTIVATE_PATH="$VENV_DIR/Scripts/activate"
+else
+    # macOS / Linux
+    ACTIVATE_PATH="$VENV_DIR/bin/activate"
+fi
+
+if [ ! -f "$ACTIVATE_PATH" ]; then
+    echo "❌ ERROR: no se encontró el script de activación del entorno virtual:"
+    echo "  $ACTIVATE_PATH"
+    exit 1
+fi
+
+source "$ACTIVATE_PATH"
 
 # --------------------------------------
 # 3) Actualizar pip
