@@ -1,0 +1,13 @@
+{
+    "n_nodos": 28,
+    "n_aristas": 43,
+    "grado_medio": 3.071,
+    "densidad": 0.1138,
+    "n_componentes": 4,
+    "coef_agrupamiento_medio": 0.3835,
+    "diametro_gc": 4,
+    "longitud_camino_media_gc": 2.14,
+    "n_comunidades": 6,
+    "tamano_medio_comunidad": 4.67,
+    "modularidad_preliminar": 0.4618712817739319
+}

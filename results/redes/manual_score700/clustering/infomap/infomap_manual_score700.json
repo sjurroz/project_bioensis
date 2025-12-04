@@ -1,0 +1,37 @@
+{
+    "algorithm": "infomap",
+    "codelength": 4.3185800714696585,
+    "communities": [
+        [
+            "PON1",
+            "PON3"
+        ],
+        [
+            "ALS2",
+            "CCNF",
+            "CHCHD10",
+            "CHMP2B",
+            "CYLD",
+            "FUS",
+            "HNRNPA1",
+            "HNRNPA2B1",
+            "MAPT",
+            "MATR3",
+            "OPTN",
+            "PPARGC1A",
+            "PSEN1",
+            "SETX",
+            "SIGMAR1",
+            "SOD1",
+            "SPG11",
+            "SQSTM1",
+            "TARDBP",
+            "TBK1",
+            "TIA1",
+            "TREM2",
+            "UBQLN2",
+            "VAPB",
+            "VCP"
+        ]
+    ]
+}

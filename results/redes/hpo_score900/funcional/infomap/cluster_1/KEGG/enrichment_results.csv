@@ -1,0 +1,3 @@
+Gene_set,Term,Overlap,P-value,Adjusted P-value,Old P-value,Old Adjusted P-value,Odds Ratio,Combined Score,Genes
+KEGG_2021_Human,Amyotrophic lateral sclerosis,2/364,0.0019345270072104,0.0038690540144209,0,0,54.23756906077348,338.87049678211525,SETX;ALS2
+KEGG_2021_Human,Pathways of neurodegeneration,1/475,0.0916752217732011,0.0916752217732011,0,0,13.728551336146271,32.80441660642033,ALS2
