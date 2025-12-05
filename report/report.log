@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.26)  5 DEC 2025 13:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.26)  5 DEC 2025 14:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -578,14 +578,31 @@ input line 116.
 (pdftex.def)             Requested size: 252.6989pt x 212.89452pt.
 )
 (tex_files/discusion.tex [9 <./figures/EDGE BETWEENNESS MANUAL.png> <./figures/
-edge_betweenness_manual_score700.png>]) (tex_files/conclusiones.tex)
-(report.bbl [10]
+edge_betweenness_manual_score700.png>]
+
+LaTeX Warning: Citation `Szklarczyk2023' on page 10 undefined on input line 10.
+
+
+
+LaTeX Warning: Citation `Menche2015' on page 10 undefined on input line 14.
+
+
+LaTeX Warning: Citation `Cheng2019' on page 10 undefined on input line 14.
+
+
+LaTeX Warning: Citation `Stoeger2019' on page 10 undefined on input line 17.
+
+
+LaTeX Warning: Citation `Stoeger2019' on page 10 undefined on input line 19.
+
+) (tex_files/conclusiones.tex [10]) (report.bbl
 LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <7> not available
 (Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 254.
 
-) 
+ [11])
+
 AED: lastpage setting LastPage
-[11] (report.aux)
+[12] (report.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -599,6 +616,9 @@ LaTeX Font Warning: Size substitutions with differences
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
 
 
@@ -607,17 +627,17 @@ Package rerunfilecheck Warning: File `report.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `report.out':
-(rerunfilecheck)             Before: 41593BBFDDCF4F6B70D9270110D8EBDE;1004
-(rerunfilecheck)             After:  1F67CD56C8AE7D7218C9E083254090B2;933.
+(rerunfilecheck)             Before: 1F67CD56C8AE7D7218C9E083254090B2;933
+(rerunfilecheck)             After:  2ED6C27E0A7F0873F859925F5C60DBE2;1192.
  ) 
 Here is how much of TeX's memory you used:
- 11829 strings out of 474486
- 188817 string characters out of 5743755
+ 11832 strings out of 474486
+ 188863 string characters out of 5743755
  1941542 words of memory out of 5000000
- 33864 multiletter control sequences out of 15000+600000
+ 33865 multiletter control sequences out of 15000+600000
  568075 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 85i,11n,79p,1255b,713s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 85i,11n,79p,1255b,711s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\ernes\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1000.pk><C:/Users/ernes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><C:/Users/ernes/AppData/Local/Programs/MiKTeX/fonts/type1/publ
@@ -635,9 +655,9 @@ lic/amsfonts/cm/cmsy8.pfb><C:/Users/ernes/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/public/amsfonts/cm/cmti10.pfb><C:/Users/ernes/AppData/Local/Programs/MiKTe
 X/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/ernes/AppData/Local/Progr
 ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on report.pdf (11 pages, 861111 bytes).
+Output written on report.pdf (12 pages, 864584 bytes).
 PDF statistics:
- 301 PDF objects out of 1000 (max. 8388607)
- 61 named destinations out of 1000 (max. 500000)
+ 307 PDF objects out of 1000 (max. 8388607)
+ 63 named destinations out of 1000 (max. 500000)
  87 words of extra memory for PDF output out of 10000 (max. 10000000)
 

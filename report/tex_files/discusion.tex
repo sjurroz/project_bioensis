@@ -7,9 +7,15 @@ Para ello se implementó un flujo de trabajo comparativo variando las fuentes de
 
 La primera etapa del análisis consistió en determinar el umbral de interacción óptimo en STRING. La selección del \textit{score} no es trivial, ya que determina una alta similitud entre nodos de la red. 
 
-Nuestros resultados indicaron que el \textit{umbral} de 300 generó redes excesivamente densas, generando muchos agrupamientos pequeños y aislados, perdiendo conexiones entre módulos funcionales y dificultando la identificación de módulos discretos. Este comportamiento sugiere la inclusión de un alto número de falsos positivos, probablemente derivados de interacciones por co-expresión sin validación experimental. 
+Nuestros resultados indicaron que el \textit{umbral} de 300 generó redes excesivamente densas, generando muchos agrupamientos pequeños y aislados, perdiendo conexiones entre módulos funcionales y dificultando la identificación de módulos discretos. Este fenómeno es consistente con lo reportado por \cite{Szklarczyk2023}, quienes advierten que los porcentajes bajos en STRINGdb introducen falsos positivos que oscurecen la estructural modular real. 
 
 Por el contrario, el \textit{umbral} de 900 resultó en una red fragmentada y dispersa. Si bien las interacciones poseen alta evidencia, esta restricción provocó la pérdida de conectividad entre módulos funcionales y el aislamiento de genes potencialmente relevantes generando falsos negativos, limitando la visión sistémica de la patología.
 
-En consecuencia, el \textit{umbral} de 700 emergió como el punto de equilibrio óptimo. Este umbral permitió conservar una estructura topológica rica y conectada, eliminando el ruido de fondo pero preservando las interacciones biológicamente significativas necesarias para la detección de comunidades.
+En consecuencia, el \textit{umbral} de 700 emergió como el punto de equilibrio óptimo. Este umbral permitió conservar una estructura topológica rica y conectada, eliminando el ruido de fondo pero preservando las interacciones biológicamente significativas necesarias para la detección de comunidades. Esta estrategia es respalada por estudios recientes en biologia de sistemas \cite{Menche2015, Cheng2019}.
+
+\subsubsection{La discrepancia funcional de InfoMap}
+Un hallazgo particular fue el comportamiento del algoritmo \textit{InfoMap} aplicado a la lista manual con \textit{score} 700. Aunque topológicamente generó particiones con alta modularidad, el análisis de enriquecimiento funcional (GO) demostró que estos clústeres carecían de relevancia biológica o coherencia interna. Esto se alinea con el concepto de “sesgo de inspección” discutido por \cite{Stoeger2019}.
+
+Esta discrepancia puede explicarse por el "sesgo de estudio" (\textit{study bias}) inherente a la lista manual discutida por \cite{Stoeger2019}. \textit{InfoMap} basa su partición en el flujo de información. Es posible que en la lista manual, los genes estén conectados por patrones de citación en la literatura, es decir, genes que frecuentemente  se estudian juntos  más que por una afinidad biológica real. \textit{InfoMap} detectó este flujo, creando grupos matemáticamente válidos pero biológicamente no. Esto justificó su descarte en favor de \textit{Edge Betweenness}, que prioriza la estructura modular física de la red.
+
 
