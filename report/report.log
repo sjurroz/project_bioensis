@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.26)  5 DEC 2025 16:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.26)  5 DEC 2025 16:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -595,7 +595,7 @@ LaTeX Warning: Citation `Stoeger2019' on page 10 undefined on input line 17.
 
 LaTeX Warning: Citation `Stoeger2019' on page 10 undefined on input line 19.
 
-) (tex_files/conclusiones.tex [10]) (report.bbl
+[10]) (tex_files/conclusiones.tex) (report.bbl
 LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <7> not available
 (Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 254.
 
@@ -631,7 +631,7 @@ Here is how much of TeX's memory you used:
  33866 multiletter control sequences out of 15000+600000
  568075 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 85i,11n,79p,1255b,711s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 85i,11n,79p,1255b,713s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\ernes\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1000.pk><C:/Users/ernes/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><C:/Users/ernes/AppData/Local/Programs/MiKTeX/fonts/type1/publ
@@ -649,7 +649,7 @@ lic/amsfonts/cm/cmsy8.pfb><C:/Users/ernes/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/public/amsfonts/cm/cmti10.pfb><C:/Users/ernes/AppData/Local/Programs/MiKTe
 X/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/ernes/AppData/Local/Progr
 ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on report.pdf (12 pages, 864895 bytes).
+Output written on report.pdf (12 pages, 864929 bytes).
 PDF statistics:
  310 PDF objects out of 1000 (max. 8388607)
  63 named destinations out of 1000 (max. 500000)
