@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{28}
+\begin{thebibliography}{29}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -485,6 +485,28 @@ doi:\doiurl{10.1103/PhysRevE.70.066111}
 \end{barticle}
 \endbibitem
 
+%%% 29
+\bibitem{Gagliardi2019}
+\begin{barticle}
+\bauthor{\bsnm{Gagliardi}, \binits{S.}},
+\bauthor{\bsnm{Milani}, \binits{P.}},
+\bauthor{\bsnm{Sardone}, \binits{V.}},
+\bauthor{\bsnm{Pansarasa}, \binits{O.}},
+\bauthor{\bsnm{Cereda}, \binits{C.}},
+\bauthor{\bsnm{Diamanti}, \binits{L.}},
+\bauthor{\bsnm{Ceroni}, \binits{M.}},
+\bauthor{\bsnm{Lauria}, \binits{G.}},
+\bauthor{\bsnm{Cova}, \binits{E.}}:
+\batitle{Pon1 polymorphisms in amyotrophic lateral sclerosis: a possible role
+  in the pathogenesis of the disease}.
+\bjtitle{Journal of Neurology}
+\bvolume{266}(\bissue{2}),
+\bfpage{385}--\blpage{391}
+(\byear{2019}).
+doi:\doiurl{10.1007/s00415-018-9141-z}
+\end{barticle}
+\endbibitem
+
 \end{thebibliography}
 
 \newcommand{\BMCxmlcomment}[1]{}
@@ -931,6 +953,29 @@ doi:\doiurl{10.1103/PhysRevE.70.066111}
   <volume>70</volume>
   <issue>6</issue>
   <fpage>066111</fpage>
+</bibl>
+
+<bibl id="B29">
+  <title><p>PON1 polymorphisms in amyotrophic lateral sclerosis: a possible
+  role in the pathogenesis of the disease</p></title>
+  <aug>
+    <au><snm>Gagliardi</snm><fnm>S</fnm></au>
+    <au><snm>Milani</snm><fnm>P</fnm></au>
+    <au><snm>Sardone</snm><fnm>V</fnm></au>
+    <au><snm>Pansarasa</snm><fnm>O</fnm></au>
+    <au><snm>Cereda</snm><fnm>C</fnm></au>
+    <au><snm>Diamanti</snm><fnm>L</fnm></au>
+    <au><snm>Ceroni</snm><fnm>M</fnm></au>
+    <au><snm>Lauria</snm><fnm>G</fnm></au>
+    <au><snm>Cova</snm><fnm>E</fnm></au>
+  </aug>
+  <source>Journal of Neurology</source>
+  <pubdate>2019</pubdate>
+  <volume>266</volume>
+  <issue>2</issue>
+  <fpage>385</fpage>
+  <lpage>-391</lpage>
+  <url>https://link.springer.com/article/10.1007/s00415-018-9141-z</url>
 </bibl>
 
 </refgrp>
