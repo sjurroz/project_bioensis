@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.26)  4 DEC 2025 21:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.26)  5 DEC 2025 13:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -521,7 +521,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--44
  []
 
 [2]) (tex_files/material_methods.tex [3]
-<figures/Diagrama de flujo BioSis.drawio.png, id=114, 944.52875pt x 613.29124pt
+<figures/Diagrama de flujo BioSis.drawio.png, id=118, 944.52875pt x 613.29124pt
 >
 File: figures/Diagrama de flujo BioSis.drawio.png Graphic file (type png)
 <use figures/Diagrama de flujo BioSis.drawio.png>
@@ -538,7 +538,7 @@ Overfull \hbox (34.0858pt too wide) in paragraph at lines 48--63
 LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
 (Font)              using `OT1/cmss/bx/n' instead on input line 17.
 
-<figures/COMPARATIVA DE ALGORITMOS DE AGRUPAMIENTO.png, id=141, 602.25pt x 372.
+<figures/COMPARATIVA DE ALGORITMOS DE AGRUPAMIENTO.png, id=145, 602.25pt x 372.
 39125pt>
 File: figures/COMPARATIVA DE ALGORITMOS DE AGRUPAMIENTO.png Graphic file (type 
 png)
@@ -550,13 +550,13 @@ Package pdftex.def Info: figures/COMPARATIVA DE ALGORITMOS DE AGRUPAMIENTO.png
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [6] [7 <./figures/COMPARATIVA DE ALGORITMOS DE AGRUPAMIENTO.png>]
-<figures/EDGE BETWEENNESS HPO.png, id=157, 602.25pt x 372.39125pt>
+<figures/EDGE BETWEENNESS HPO.png, id=161, 602.25pt x 372.39125pt>
 File: figures/EDGE BETWEENNESS HPO.png Graphic file (type png)
 <use figures/EDGE BETWEENNESS HPO.png>
 Package pdftex.def Info: figures/EDGE BETWEENNESS HPO.png  used on input line 8
 2.
 (pdftex.def)             Requested size: 252.6989pt x 156.25551pt.
-<figures/edge_betweenness_hpo_score700.png, id=158, 737.154pt x 621.0402pt>
+<figures/edge_betweenness_hpo_score700.png, id=162, 737.154pt x 621.0402pt>
 File: figures/edge_betweenness_hpo_score700.png Graphic file (type png)
 <use figures/edge_betweenness_hpo_score700.png>
 Package pdftex.def Info: figures/edge_betweenness_hpo_score700.png  used on inp
@@ -564,26 +564,26 @@ ut line 92.
 (pdftex.def)             Requested size: 252.6989pt x 212.89452pt.
  [8 <./figures/EDGE BETWEENNESS HPO.png> <./figures/edge_betweenness_hpo_score7
 00.png>]
-<figures/EDGE BETWEENNESS MANUAL.png, id=168, 602.25pt x 372.39125pt>
+<figures/EDGE BETWEENNESS MANUAL.png, id=172, 602.25pt x 372.39125pt>
 File: figures/EDGE BETWEENNESS MANUAL.png Graphic file (type png)
 <use figures/EDGE BETWEENNESS MANUAL.png>
 Package pdftex.def Info: figures/EDGE BETWEENNESS MANUAL.png  used on input lin
 e 103.
 (pdftex.def)             Requested size: 252.6989pt x 156.25551pt.
-<figures/edge_betweenness_manual_score700.png, id=169, 737.154pt x 621.0402pt>
+<figures/edge_betweenness_manual_score700.png, id=173, 737.154pt x 621.0402pt>
 File: figures/edge_betweenness_manual_score700.png Graphic file (type png)
 <use figures/edge_betweenness_manual_score700.png>
 Package pdftex.def Info: figures/edge_betweenness_manual_score700.png  used on 
 input line 116.
 (pdftex.def)             Requested size: 252.6989pt x 212.89452pt.
 )
-(tex_files/discusion.tex) (tex_files/conclusiones.tex) (report.bbl [9 <./figure
-s/EDGE BETWEENNESS MANUAL.png> <./figures/edge_betweenness_manual_score700.png>
-]
+(tex_files/discusion.tex [9 <./figures/EDGE BETWEENNESS MANUAL.png> <./figures/
+edge_betweenness_manual_score700.png>]) (tex_files/conclusiones.tex)
+(report.bbl [10]
 LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <7> not available
 (Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 254.
 
- [10]) 
+) 
 AED: lastpage setting LastPage
 [11] (report.aux)
  ***********
@@ -601,14 +601,20 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: A3EA61EFFBF3D2DE331C9EED6C20E6BE;629.
+
+Package rerunfilecheck Warning: File `report.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `report.out':
+(rerunfilecheck)             Before: 41593BBFDDCF4F6B70D9270110D8EBDE;1004
+(rerunfilecheck)             After:  1F67CD56C8AE7D7218C9E083254090B2;933.
  ) 
 Here is how much of TeX's memory you used:
- 11826 strings out of 474486
- 188770 string characters out of 5743755
- 1942542 words of memory out of 5000000
- 33862 multiletter control sequences out of 15000+600000
+ 11829 strings out of 474486
+ 188817 string characters out of 5743755
+ 1941542 words of memory out of 5000000
+ 33864 multiletter control sequences out of 15000+600000
  568075 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  85i,11n,79p,1255b,713s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -629,9 +635,9 @@ lic/amsfonts/cm/cmsy8.pfb><C:/Users/ernes/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/public/amsfonts/cm/cmti10.pfb><C:/Users/ernes/AppData/Local/Programs/MiKTe
 X/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/ernes/AppData/Local/Progr
 ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on report.pdf (11 pages, 858064 bytes).
+Output written on report.pdf (11 pages, 861111 bytes).
 PDF statistics:
- 296 PDF objects out of 1000 (max. 8388607)
- 60 named destinations out of 1000 (max. 500000)
- 79 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 301 PDF objects out of 1000 (max. 8388607)
+ 61 named destinations out of 1000 (max. 500000)
+ 87 words of extra memory for PDF output out of 10000 (max. 10000000)
 

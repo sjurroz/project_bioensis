@@ -1,1 +1,15 @@
 \section{Discusión}
+
+Una vez obtenidos los resultados, el objetivo principa del estudio fue dilucidar la arquitectura modular de los genes implicados en la Esclerosis Lateral Amiotrófica (ELA), a partir de una búsqueda exhaustiva de las redes funcionales con mecanismos biológicos subyacentes. 
+Para ello se implementó un flujo de trabajo comparativo variando las fuentes de datos (HPO vs Manual), los umbrales de confianza “score” y los algoritmos de detección de comunidades. A continuación, se discuten las decisiones metodológicas y los hallazgos biológicos derivados de este análisis jerárquico. 
+
+\subsection{Impacto del umbral en la topología de la red}
+
+La primera etapa del análisis consistió en determinar el umbral de interacción óptimo en STRING. La selección del \textit{score} no es trivial, ya que determina una alta similitud entre nodos de la red. 
+
+Nuestros resultados indicaron que el \textit{umbral} de 300 generó redes excesivamente densas, generando muchos agrupamientos pequeños y aislados, perdiendo conexiones entre módulos funcionales y dificultando la identificación de módulos discretos. Este comportamiento sugiere la inclusión de un alto número de falsos positivos, probablemente derivados de interacciones por co-expresión sin validación experimental. 
+
+Por el contrario, el \textit{umbral} de 900 resultó en una red fragmentada y dispersa. Si bien las interacciones poseen alta evidencia, esta restricción provocó la pérdida de conectividad entre módulos funcionales y el aislamiento de genes potencialmente relevantes generando falsos negativos, limitando la visión sistémica de la patología.
+
+En consecuencia, el \textit{umbral} de 700 emergió como el punto de equilibrio óptimo. Este umbral permitió conservar una estructura topológica rica y conectada, eliminando el ruido de fondo pero preservando las interacciones biológicamente significativas necesarias para la detección de comunidades.
+
