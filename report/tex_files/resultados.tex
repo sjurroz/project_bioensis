@@ -61,8 +61,23 @@ Como se muestra en las tablas, el análisis de las redes mostró un balance ópt
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.7\linewidth]{figures/COMPARATIVA DE ALGORITMOS DE AGRUPAMIENTO.png}
-	\caption{Esquema conceptual del flujo de trabajo.}
-	\label{fig:diagramadeflujobiosis}
+	\label{fig:comparativaclusterizacion}
 \end{figure}
 
 En la figura se ilustra el rendimiento de los  métodos de agrupamiento utilizados. En ella se revela que el algoritmo de Edge Betweenness ofreció los resultados más favorables, tanto para la red generada manualmente como para la basada en HPO.
+
+En la Figura 4 se muestran los genes obtenidos con el primer método para la red armada con HPO. Se puede observar la preponderancia de tres grupos o clusters. Se observa el grupo MAYOR como el que más cantidad de genes asociados tiene. En segundo lugar el grupo ERB y por último el grupo PON. Luego vemos como el resto de los genes no forman ningún cluster. 
+
+En el primer grupo, al ser contener una mayor cantidad de genes, observamos una mayor relación en cuanto a procesos biológicos en los que se ven involucrados, dentro de estos tenemos la respuesta de la célula al estrés, regulación ante la autofagia, regulación de la comunicación y de “cell signaling”, entre otros. 
+
+Continuando con el segundo grupo, en el cual se encuentran 3 genes, vemos una gran cantidad de procesos biológicos relacionados especialmente considerando la baja cantidad que se encuentran dentro del grupo. Algunos de los procesos con los que se relaciona son el desarrollo y activación de las células gliales, la poda sináptica, regulación del potencial de membrana en reposo.
+
+Por último, nos queda el grupo más pequeño dentro de los 3, compuesto solamente por dos genes. Este tiene un solo proceso biológico asociado, siendo este el proceso catabólico de la lactona.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{figures/EDGE BETWEENNESS HPO.png}
+	\label{fig:HPOEDGE}
+\end{figure}
+
+\newpage
