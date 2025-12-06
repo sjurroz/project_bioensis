@@ -1,0 +1,43 @@
+{
+    "algorithm": "fast_greedy",
+    "modularity": 0.222621212384203,
+    "communities": [
+        [
+            "CCNF",
+            "CHMP2B",
+            "CYLD",
+            "OPTN",
+            "SQSTM1",
+            "TBK1",
+            "UBQLN2",
+            "VCP"
+        ],
+        [
+            "ALS2",
+            "PPARGC1A",
+            "SETX",
+            "SIGMAR1",
+            "SOD1",
+            "SPG11",
+            "VAPB"
+        ],
+        [
+            "CHCHD10",
+            "FUS",
+            "HNRNPA1",
+            "HNRNPA2B1",
+            "MATR3",
+            "TARDBP",
+            "TIA1"
+        ],
+        [
+            "MAPT",
+            "PSEN1",
+            "TREM2"
+        ],
+        [
+            "PON1",
+            "PON3"
+        ]
+    ]
+}

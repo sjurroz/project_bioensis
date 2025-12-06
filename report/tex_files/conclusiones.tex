@@ -1,1 +1,8 @@
 \section{Conclusiones}
+Este estudio  ha permitido el análisis de redes de interacción proteína-proteína en el contexto de la Esclerosis Lateral Amiotrófica (ELA) a partir de la implementación la biología de sistemas para deconstruir la enfermedad genética del fenotipo . Nuestros resultados demuestran que la integración de datos fenotípicos estandarizados (HPO) con un (\textit{score} 700) y el algoritmo de \textit{Edge Betweenness} constituye la estrategia más adecuada para el análisis del enriquecimiento funcional de las redes PPI compuestas por genes involucrados en nuestro fenotipo.
+
+Desde una perspectiva metodológica, se concluye que:
+\begin{itemize}
+	\item La selección del umbral es crítica: un \textit{score} de 700 evita tanto la saturación de ruido (falsos positivos) observada en umbrales bajos como la pérdida de información funcional (falsos negativos) de los umbrales estrictos.
+	\item La curación manual de genes, aunque es valiosa, presenta un "sesgo de inspección" significativo que puede inducir a errores en algoritmos basados en flujo como \textit{InfoMap}. En contraste, el uso de la ontología HPO demostró ser superior para capturar una red más rica y funcionalmente coherente.
+\end{itemize}

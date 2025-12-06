@@ -1,7 +1,121 @@
 
 \section{Resultados}
-A partir de la aplicación de la metodología, para el caso de la lista creada a partir del HPO obtuvimos los datos que se muestran en la tabla 1. Mientras que para la lista manual se obtuvieron los datos que se muestran en la tabla 2. 
+A partir de la aplicación de la metodología, para el caso de la lista creada a partir del HPO obtuvimos los datos que se muestran en la tabla 3. Mientras que para la lista manual se obtuvieron los datos que se muestran en la tabla 4. 
 
-(falta subir la tabla )
+\begin{table}[h!]
+	
+	\centering
+	
+	\renewcommand{\arraystretch}{1.5} % Aumenta el espacio entre filas para que se lea mejor
+	
+	\setlength{\tabcolsep}{7pt}       % Aumenta el espacio entre columnas
+	
+	\begin{tabular}{|c|c|c|c|}
+		
+		\hline
+		
+		\textbf{} & \textbf{\textit{Edge Betweenness}} & \textbf{\textit{Infomap}} & \textbf{\textit{Fast Greedy}} \\ \hline
+		
+		\textbf{300} & 12 & 2 & 4 \\ \hline
+		
+		\textbf{700} & \textbf{24} & 2 & 4 \\ \hline
+		
+		\textbf{900} & 8 & 6 & 6 \\ \hline
+		
+	\end{tabular}
+	\caption{Resultados de agrupamiento por umbral y algoritmo HPO.}
+	
+	\label{tab:resultados_cluster}
+	
+\end{table}
 
-Como se muestra en las tablas 1 y 2, el análisis de las redes mostró un balance óptimo al utilizar el score de 700. En contraste el umbral de 300 generó una red con una estructura laxa, mientras que el score 900 resultó estricto, limitando las interacciones. 
+\begin{table}[h!]
+	
+	\centering
+	
+	\renewcommand{\arraystretch}{1.5} % Aumenta el espacio entre filas para que se lea mejor
+	
+	\setlength{\tabcolsep}{7pt}       % Aumenta el espacio entre columnas
+	
+	\begin{tabular}{|c|c|c|c|}
+		
+		\hline
+		
+		\textbf{} & \textbf{\textit{Edge Betweenness}} & \textbf{\textit{Infomap}} & \textbf{\textit{Fast Greedy}} \\ \hline
+		
+		\textbf{300} & 2 & 2 & 4 \\ \hline
+		
+		\textbf{700} & \textbf{15} & 2 & 5 \\ \hline
+		
+		\textbf{900} & 7 & 4 & 4 \\ \hline
+		
+	\end{tabular}
+	\caption{Resultados de agrupamiento por umbral y obtenidos manualmente.}
+	
+	\label{tab:resultados_cluster}
+	
+\end{table}
+
+Como se muestra en las tablas, el análisis de las redes mostró un balance óptimo al utilizar el score de \textbf{700}. En contraste el umbral de 300 generó una red con una estructura laxa, mientras que el score 900 resultó estricto, limitando las interacciones. 
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{figures/COMPARATIVA DE ALGORITMOS DE AGRUPAMIENTO.png}
+	\caption{Comparación de los algoritmos de agrupamiento respecto a los umbrales (300, 700 y 900), tomados de forma manual y mediante HPO.}
+	\label{fig:comparativaclusterizacion}
+\end{figure}
+
+En la Figura 2 se ilustra el rendimiento de los  métodos de agrupamiento utilizados, tanto para la red generada de forma manual como para la basada en HPO. En ella se revela que el algoritmo de Edge Betweenness ofreció los resultados más favorables. 
+
+En la Figura 4 se muestran los genes obtenidos con el primer método para la red armada con HPO. Se puede observar la preponderancia de tres grupos o clusters. Se observa el grupo "MAYOR" como el que más cantidad de genes asociados tiene. En segundo lugar el grupo "ERB" y por último el grupo "PON". Luego vemos como el resto de los genes no forman ningún cluster. 
+
+En el primer grupo, al contener una mayor cantidad de genes, permite observar una mayor relación en cuanto a procesos biológicos en los que se ven involucrados.
+
+Continuando con el segundo grupo "ERB", en el cual se encuentran 3 genes, vemos una gran cantidad de procesos biológicos relacionados, considerando la baja cantidad  dentro del grupo. 
+
+El grupo más pequeño "PON" dentro de los 3 está compuesto solamente por dos genes. Es decir,  tiene un solo proceso biológico asociado, siendo este el proceso catabólico de la lactona.
+
+\newpage
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{figures/EDGE BETWEENNESS HPO.png}
+	\caption{Visualización de genes asociados al ELA obtenidos por HPO}
+	\label{fig:HPOEDGE}
+\end{figure}
+
+
+En la siguiente figura se puede observar la red de nodos para el algoritmo descripto. 
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{figures/edge_betweenness_hpo_score700.png}
+	\caption{: Red construida a partir de HPO con score 700 y aplicado el algoritmo de Edge Betweenness}
+	\label{fig:HPOEDGE}
+\end{figure}
+
+
+En la figura 5 podemos comparar los resultados obtenidos anteriormente con los obtenidos de forma manual. De forma análoga a como se realizó en para el HPO.
+\newpage
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{figures/EDGE BETWEENNESS MANUAL.png}
+	\caption{Visualización de genes asociados al ELA extraídos de forma manual}
+	\label{fig:HPOEDGE}
+\end{figure}
+
+En la figura 6 se aprecia de forma gráfica la red de nodos asociados de forma manual.
+ 
+Como resultado de este procedimiento, se identificaron únicamente dos clusters, lo que se tradujo en un enriquecimiento funcional más restringido. Dado que la distribución de los genes preponderantes se aprecia con claridad en la figura, se prescinde de su enumeración en el texto.
+
+Cabe destacar que al examinar los grupos, se observa que el menor  de ellos (PON) replica exactamente al obtenido mediante HPO. Por su parte, el grupo mayoritario muestra una ligera modificación estructural: contiene menos nodos que en la red anterior, lo que conlleva una disminución en los procesos biológicos identificados, aunque sus funciones principales se mantienen estables.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{figures/edge_betweenness_manual_score700.png}
+	\caption{: Red construida a partir de la lista manual con score 700 y aplicado el algoritmo de Edge Betweenness}
+	\label{fig:HPOEDGE}
+\end{figure}
+
+
