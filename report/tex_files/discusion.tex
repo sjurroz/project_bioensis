@@ -31,3 +31,9 @@ Por otro lado, el clúster principal mostró diferencias interesantes entre las 
 \end{itemize}
 Esto sugiere que, si bien la curación manual es precisa, la extracción automática basada en fenotipos (HPO) es capaz de recuperar interacciones sutiles que enriquecen el contexto biológico. 
 El cluster principal "MAYOR" que podemos observar en las figuras 3 y 5, agrupa a los genes más emblemáticos de la ELA, como C9orf72, SOD1, TARDBP y FUS. La co-aparición de estos genes valida nuestro enfoque, ya que SOD1 fue el primer gen identificado en las formas familiares de la enfermedad y sus mutaciones son un pilar etiológico relevante.
+
+En resumen, la combinación de un \textit{score} de alta confianza (700) con el algoritmo \textit{Edge Betweenness} sobre datos derivados de HPO constituyó la estrategia más eficaz. Esta configuración permite filtrar el ruido, superar los sesgos de la literatura manual y aislar módulos funcionales coherentes, descartando agrupamientos espurios (como los de PON1/PON3) y centrando el análisis en los procesos biológicos nucleares de la esclerosis lateral amiotrófica.
+
+Por consiguiente se seleccionó la red óptima para realizar un análisis más profundo del enriquecimiento funcional de esta misma, partiendo de ya haber hecho una mención de grandes rasgos preliminares de este análisis. Para esto se utilizó dos herramientas bioinformáticas complementarias a la ya mencionada (GO) que son KEGG y REACTOME, las cuales se usaron para analizar la red PPI como un todo. REACTOME analizó en qué proceso biológico se ve implicado el \textit{cluster}, mientras que GO amplía con la ubicación y la función de dicho proceso y por último KEGG indicó el contexto clínico. Como se mencionó anteriormente uno de los tres agrupamientos no presentó relevancia alguna en el contexto del fenotipo siendo descartado para continuar en el análisis. 
+
+
