@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{29}
+\begin{thebibliography}{30}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -474,6 +474,19 @@ doi:\doiurl{10.1103/PhysRevE.70.066111}
 \endbibitem
 
 %%% 28
+\bibitem{Cheng2011}
+\begin{botherref}
+\oauthor{\bsnm{Cheng}, \binits{K.C.}},
+\oauthor{\bsnm{Xin}, \binits{X.}},
+\oauthor{\bsnm{Clark}, \binits{D.P.}},
+\oauthor{\bsnm{{La Riviere}}, \binits{P.}}:
+{Whole-animal imaging, gene function, and the Zebrafish Phenome Project}
+(2011).
+doi:\doiurl{10.1016/j.gde.2011.08.006}
+\end{botherref}
+\endbibitem
+
+%%% 29
 \bibitem{Stoeger2019}
 \begin{barticle}
 \bauthor{\bsnm{Stoeger}, \binits{T.}},
@@ -489,7 +502,7 @@ doi:\doiurl{10.1103/PhysRevE.70.066111}
 \end{barticle}
 \endbibitem
 
-%%% 29
+%%% 30
 \bibitem{Gagliardi2019}
 \begin{barticle}
 \bauthor{\bsnm{Gagliardi}, \binits{S.}},
@@ -951,6 +964,19 @@ doi:\doiurl{10.1007/s00415-018-9141-z}
 </bibl>
 
 <bibl id="B28">
+  <title><p>{Whole-animal imaging, gene function, and the Zebrafish Phenome
+  Project}</p></title>
+  <aug>
+    <au><snm>Cheng</snm><fnm>KC</fnm></au>
+    <au><snm>Xin</snm><fnm>X</fnm></au>
+    <au><snm>Clark</snm><fnm>DP</fnm></au>
+    <au><snm>{La Riviere}</snm><fnm>P</fnm></au>
+  </aug>
+  <source>Current Opinion in Genetics and Development</source>
+  <pubdate>2011</pubdate>
+</bibl>
+
+<bibl id="B29">
   <title><p>Large-scale investigation of the reasons why potentially important
   genes are ignored</p></title>
   <aug>
@@ -967,7 +993,7 @@ doi:\doiurl{10.1007/s00415-018-9141-z}
   <fpage>e2006643</fpage>
 </bibl>
 
-<bibl id="B29">
+<bibl id="B30">
   <title><p>PON1 polymorphisms in amyotrophic lateral sclerosis: a possible
   role in the pathogenesis of the disease</p></title>
   <aug>

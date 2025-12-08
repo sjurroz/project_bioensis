@@ -23,52 +23,50 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: bibliography.bib
 Warning--I didn't find a database entry for "ELA_HPO"
 Warning--I didn't find a database entry for "RWE_Riluzole2020"
-Warning--I didn't find a database entry for "Menche2015"
-Warning--I didn't find a database entry for "Cheng2019"
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 29 entries,
+You've used 30 entries,
             7128 wiz_defined-function locations,
-            1365 strings with 16015 characters,
-and the built_in function-call counts, 167386 in all, are:
-= -- 19831
-> -- 1124
-< -- 657
-+ -- 3631
-- -- 336
-* -- 13811
-:= -- 33744
-add.period$ -- 54
-call.type$ -- 29
-change.case$ -- 273
-chr.to.int$ -- 1403
-cite$ -- 29
-duplicate$ -- 3034
-empty$ -- 10252
-format.name$ -- 1156
-if$ -- 36686
+            1367 strings with 16212 characters,
+and the built_in function-call counts, 172098 in all, are:
+= -- 20402
+> -- 1147
+< -- 664
++ -- 3723
+- -- 347
+* -- 14202
+:= -- 34743
+add.period$ -- 55
+call.type$ -- 30
+change.case$ -- 281
+chr.to.int$ -- 1407
+cite$ -- 30
+duplicate$ -- 3117
+empty$ -- 10550
+format.name$ -- 1195
+if$ -- 37671
 int.to.chr$ -- 1
-int.to.str$ -- 73
-missing$ -- 1045
-newline$ -- 953
-num.names$ -- 145
-pop$ -- 1208
+int.to.str$ -- 75
+missing$ -- 1080
+newline$ -- 978
+num.names$ -- 150
+pop$ -- 1262
 preamble$ -- 1
-purify$ -- 129
-quote$ -- 58
-skip$ -- 8972
+purify$ -- 133
+quote$ -- 60
+skip$ -- 9206
 stack$ -- 0
-substring$ -- 23524
-swap$ -- 1070
-text.length$ -- 464
+substring$ -- 24241
+swap$ -- 1083
+text.length$ -- 477
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1276
+type$ -- 1303
 warning$ -- 0
-while$ -- 1089
+while$ -- 1118
 width$ -- 0
-write$ -- 1328
-(There were 4 warnings)
+write$ -- 1366
+(There were 2 warnings)
