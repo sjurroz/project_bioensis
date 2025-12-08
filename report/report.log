@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.26)  8 DEC 2025 11:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.26)  8 DEC 2025 16:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -646,10 +646,10 @@ ore700.png>] [11]) (tex_files/conclusiones.tex) (report.bbl [12]
 LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <7> not available
 (Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 243.
 
-)
+ [13])
 
 AED: lastpage setting LastPage
-[13] (report.aux)
+[14] (report.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -672,37 +672,33 @@ Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: 7C68B9873D2676CE4916F36E5BEFDBE6;1534.
  ) 
 Here is how much of TeX's memory you used:
- 14072 strings out of 474486
- 226431 string characters out of 5743755
- 1941542 words of memory out of 5000000
+ 14074 strings out of 474486
+ 226449 string characters out of 5743755
+ 1945542 words of memory out of 5000000
  35851 multiletter control sequences out of 15000+600000
- 575922 words of font info for 187 fonts, out of 8000000 for 9000
+ 575982 words of font info for 188 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  85i,11n,79p,1261b,729s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{page.14} has been referenced but does not exist, re
-placed by a fixed one
-
- <C:\Users\marti\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm10
-00.pk><C:/Users/marti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
-/cm/cmbx10.pfb><C:/Users/marti/AppData/Local/Programs/MiKTeX/fonts/type1/public
-/amsfonts/cm/cmbxti10.pfb><C:/Users/marti/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmmi8.pfb><C:/Users/marti/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/marti/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/marti/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/marti/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Users/ma
-rti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/
-Users/marti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx
-10.pfb><C:/Users/marti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
-s/cm/cmssi8.pfb><C:/Users/marti/AppData/Local/Programs/MiKTeX/fonts/type1/publi
-c/amsfonts/cm/cmsy8.pfb><C:/Users/marti/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/public/amsfonts/cm/cmti10.pfb><C:/Users/marti/AppData/Local/Programs/MiKTeX/
-fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/marti/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on report.pdf (13 pages, 892000 bytes).
+ <C:\Users\marti\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
+1000.pk><C:/Users/marti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmbx10.pfb><C:/Users/marti/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmbxti10.pfb><C:/Users/marti/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/marti/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/marti/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/marti/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/marti/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Users/
+marti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C
+:/Users/marti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss
+bx10.pfb><C:/Users/marti/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmssi8.pfb><C:/Users/marti/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmsy8.pfb><C:/Users/marti/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmti10.pfb><C:/Users/marti/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/marti/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on report.pdf (14 pages, 893690 bytes).
 PDF statistics:
- 325 PDF objects out of 1000 (max. 8388607)
+ 329 PDF objects out of 1000 (max. 8388607)
  68 named destinations out of 1000 (max. 500000)
  50279 words of extra memory for PDF output out of 51595 (max. 10000000)
 
