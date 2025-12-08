@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.26)  8 DEC 2025 16:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.26)  8 DEC 2025 16:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -642,7 +642,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) (tex_files/discusion.tex [9 <./figures/edge_betweenness_hpo_score700.png> <./
 figures/EDGE BETWEENNESS MANUAL.png>] [10 <./figures/edge_betweenness_manual_sc
-ore700.png>] [11]) (tex_files/conclusiones.tex) (report.bbl [12]
+ore700.png>] [11]) (tex_files/conclusiones.tex) [12] (report.bbl
 LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <7> not available
 (Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 243.
 
@@ -674,7 +674,7 @@ Package rerunfilecheck Info: File `report.out' has not changed.
 Here is how much of TeX's memory you used:
  14074 strings out of 474486
  226449 string characters out of 5743755
- 1945542 words of memory out of 5000000
+ 1944542 words of memory out of 5000000
  35851 multiletter control sequences out of 15000+600000
  575982 words of font info for 188 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -696,7 +696,7 @@ lic/amsfonts/cm/cmsy8.pfb><C:/Users/marti/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/public/amsfonts/cm/cmti10.pfb><C:/Users/marti/AppData/Local/Programs/MiKTe
 X/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/marti/AppData/Local/Progr
 ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on report.pdf (14 pages, 893690 bytes).
+Output written on report.pdf (14 pages, 893828 bytes).
 PDF statistics:
  329 PDF objects out of 1000 (max. 8388607)
  68 named destinations out of 1000 (max. 500000)
