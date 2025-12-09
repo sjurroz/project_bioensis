@@ -64,11 +64,8 @@ El repositorio se organiza de la siguiente manera:
 ```
 project_bioensis/
 ├── code/                                   # Codigo fuente principal
-│   │
 │   ├── scripts/                            # Scripts del pipeline
-│   │
 │   ├── setup.sh                            # Script para instalación de dependencias
-│   │
 │   └── run.sh                              # Script principal para ejecutar el pipeline
 │
 ├── genes/                                  # Genes de entrada (lista manual)
