@@ -149,9 +149,7 @@ Con esto se instalan automaticamente los siguientes dependencias:
 - Requiere conexión a internet para consultar APIs (STRING, HPO, GO)
 
 
-**2. 📊 Resultados esperados**
-```markdown
-## 📊 Resultados Esperados
+## 📊 Resultados esperados
 
 Los análisis generan:
 - Redes GraphML
@@ -159,8 +157,8 @@ Los análisis generan:
 - Archivos JSON con datos estructurados de cada análisis
 - Tablas comparativas en formato CSV/TSV
 - Análisis de enriquecimiento funcional
+  
 ## ⚙️ .gitignore
-```
 #Cache de Python
 **/__pycache__/
 *.py[cod]
