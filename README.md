@@ -159,6 +159,7 @@ Los análisis generan:
 - Análisis de enriquecimiento funcional
   
 ## ⚙️ .gitignore
+```
 #Cache de Python
 **/__pycache__/
 *.py[cod]
