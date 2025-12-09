@@ -120,7 +120,7 @@ project_bioensis/
 ### Configuración del entorno
 
 ```bash
-git clone "enlace_github"
+git clone "https://github.com/sjurroz/project_bioensis.git"
 cd code/
 bash setup.sh
 ```
@@ -187,4 +187,3 @@ env/
 
 **Institución**: Universidad de Málaga  
 **Programa**: Grado en Ingenieria de la Salud
-**Tipo**: Trabajo de final de asignatura
