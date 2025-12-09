@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.26)  8 DEC 2025 18:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.9.26)  9 DEC 2025 12:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -550,18 +550,18 @@ LaTeX Font Warning: Font shape `OT1/cmss/bx/n' in size <13> not available
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <24> not available
 (Font)              size <24.88> substituted on input line 29.
 
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 34.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 33.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 34.
+(Font)              size <5> substituted on input line 33.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <5.5> not available
-(Font)              size <5> substituted on input line 34.
+(Font)              size <5> substituted on input line 33.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 34.
+(Font)              size <5> substituted on input line 33.
 
 \address@aff1=\toks42
 (tex_files/introduction.tex
@@ -569,7 +569,7 @@ LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <5.5> not available
 LaTeX Warning: Citation `ELA_HPO' on page 1 undefined on input line 6.
 
 LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <8> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 9.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 7.
 [1{C:/Users/marti/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
 ]
@@ -578,7 +578,7 @@ LaTeX Warning: Citation `RWE_Riluzole2020' on page 2 undefined on input line 54
 .
 
 [2]) (tex_files/material_methods.tex [3]
-<figures/Diagrama de flujo BioSis.drawio.png, id=123, 945.5325pt x 915.42pt>
+<figures/Diagrama de flujo BioSis.drawio.png, id=122, 945.5325pt x 915.42pt>
 File: figures/Diagrama de flujo BioSis.drawio.png Graphic file (type png)
 <use figures/Diagrama de flujo BioSis.drawio.png>
 Package pdftex.def Info: figures/Diagrama de flujo BioSis.drawio.png  used on i
@@ -597,8 +597,11 @@ LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 [6]
-<figures/COMPARATIVA DE ALGORITMOS DE AGRUPAMIENTO.png, id=155, 602.25pt x 372.
+<figures/COMPARATIVA DE ALGORITMOS DE AGRUPAMIENTO.png, id=154, 602.25pt x 372.
 39125pt>
 File: figures/COMPARATIVA DE ALGORITMOS DE AGRUPAMIENTO.png Graphic file (type 
 png)
@@ -606,14 +609,18 @@ png)
 Package pdftex.def Info: figures/COMPARATIVA DE ALGORITMOS DE AGRUPAMIENTO.png 
  used on input line 67.
 (pdftex.def)             Requested size: 252.6989pt x 156.25551pt.
- [7 <./figures/COMPARATIVA DE ALGORITMOS DE AGRUPAMIENTO.png>]
-<figures/EDGE BETWEENNESS HPO.png, id=165, 602.25pt x 372.39125pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[7]
+<figures/EDGE BETWEENNESS HPO.png, id=163, 602.25pt x 372.39125pt>
 File: figures/EDGE BETWEENNESS HPO.png Graphic file (type png)
 <use figures/EDGE BETWEENNESS HPO.png>
 Package pdftex.def Info: figures/EDGE BETWEENNESS HPO.png  used on input line 8
 5.
 (pdftex.def)             Requested size: 252.6989pt x 156.25551pt.
-<figures/edge_betweenness_hpo_score700.png, id=166, 737.154pt x 621.0402pt>
+<figures/edge_betweenness_hpo_score700.png, id=164, 737.154pt x 621.0402pt>
 File: figures/edge_betweenness_hpo_score700.png Graphic file (type png)
 <use figures/edge_betweenness_hpo_score700.png>
 Package pdftex.def Info: figures/edge_betweenness_hpo_score700.png  used on inp
@@ -623,7 +630,8 @@ ut line 95.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[8 <./figures/EDGE BETWEENNESS HPO.png>]
+[8 <./figures/COMPARATIVA DE ALGORITMOS DE AGRUPAMIENTO.png> <./figures/EDGE BE
+TWEENNESS HPO.png>]
 <figures/EDGE BETWEENNESS MANUAL.png, id=174, 602.25pt x 372.39125pt>
 File: figures/EDGE BETWEENNESS MANUAL.png Graphic file (type png)
 <use figures/EDGE BETWEENNESS MANUAL.png>
@@ -696,7 +704,7 @@ lic/amsfonts/cm/cmsy8.pfb><C:/Users/marti/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/public/amsfonts/cm/cmti10.pfb><C:/Users/marti/AppData/Local/Programs/MiKTe
 X/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/marti/AppData/Local/Progr
 ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on report.pdf (15 pages, 899544 bytes).
+Output written on report.pdf (15 pages, 900904 bytes).
 PDF statistics:
  334 PDF objects out of 1000 (max. 8388607)
  69 named destinations out of 1000 (max. 500000)
