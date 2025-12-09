@@ -17,7 +17,7 @@ El flujo de trabajo propuesto genera redes de proteínas, realiza clustering, an
 ---
 
 ## ⛓️ Descripción general del flujo
-El proyecto implementa un pipeline automatizado que procesa datos de genes asociados con la ELA a través de cinco etapas secuenciales.
+El proyecto implementa un pipeline automatizado que procesa datos de genes asociados con la ELA a través de seis etapas secuenciales.
 
 1. **Obtención de datos iniciales**: El pipeline obtiene listas de genes de dos fuentes distintas:
 
@@ -36,19 +36,19 @@ Filtra estas interacciones por diferentes umbrales de confianza, obteniendo una 
 - Propiedades globales: densidad, diámetro, coeficiente de clustering
 - Métricas de centralidad: grado, betweenness, closeness
 
-**Clustering y detección de módulos:** El sistema ejecuta tres algoritmos de clustering:
+4. **Clustering y detección de módulos:** El sistema ejecuta tres algoritmos de clustering:
 - Fast Greedy Modularity (optimiza la modularidad)
 - Edge Betweenness (realiza divisiones jerárquicas)
 - Infomap (basado en teoría de la información)
 
-4. **Análisis funcional:** El pipeline realiza un análisis de sobrerrepresentación (ORA)
+5. **Análisis funcional:** El pipeline realiza un análisis de sobrerrepresentación (ORA)
 para cada cluster identificado, utilizando 3 bases de datos como referencia:
 
 - _Gene Ontology (procesos biológicos)_: forma parte de la Gene Ontology (GO), y describe los procesos biológicos en los que participan los genes.
 - _KEGG_: representa las rutas metabólicas y de señalización del organismo humano, mostrando cómo interactúan los genes y proteínas dentro de sistemas biológicos.
 - _Reactome_: recopila reacciones metabólicas y vías moleculares del genoma humano, con anotaciones curadas manualmente por expertos a partir de evidencia experimental.
 
-5. **Síntesis de resultados:** El sistema genera tablas comparativas considerando las distintas combinaciones de parámetros propuestas en cada etapa:
+6. **Síntesis de resultados:** El sistema genera tablas comparativas considerando las distintas combinaciones de parámetros propuestas en cada etapa:
 - Modo de extracción de genes (HPO, manual)
 - Umbral de confianza en las interacciones (300, 700, 900)
 - Algoritmo de clustering (fast greedy, edge betweeness, infomap)
