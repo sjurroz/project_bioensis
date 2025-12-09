@@ -62,15 +62,15 @@ El proyecto esta organizado de la siguiente forma para tener un acceso mas intui
 project_bioensis/
 ├── code/
 │   ├── scripts/
-│   │   ├── pipeline.py
-│   │   ├── generar_red.py
-│   │   ├── clustering.py
-│   │   ├── analizar_topologia_red.py
-│   │   ├── analisis_funcional_clusters.py
-│   │   ├── resumen_clustering.py
-│   │   └── paths.py
-│   ├── setup.sh
-│   └── run.sh
+│   │   ├── pipeline.py         #Ejecuta todo el flujo secuencial
+│   │   ├── generar_red.py      #Obtiene genes y contruye redes desde STRING
+│   │   ├── clustering.py       #Ejecuta los algoritmos Fast Greedy , Edge Betweenness e Infomap
+│   │   ├── analizar_topologia_red.py           #Calcula metricas de la red
+│   │   ├── analisis_funcional_clusters.py      #Analisis de enriquecimiento 
+│   │   ├── resumen_clustering.py               #Genera tablas comparativas entre algoritmos y configuraciones
+│   │   └── paths.py                            #Gestion de las rutas del proyecto
+│   ├── setup.sh  #Crear el entorno 
+│   └── run.sh    #Ejecuta el entorno
 ├── genes/
 │   ├── comparacion_listas_genes.csv
 │   ├── lista_genes_hpo.json
@@ -95,17 +95,17 @@ project_bioensis/
 │   │   ├── introduction.tex
 │   │   ├── material_methods.tex
 │   │   └── resultados.tex
-│   ├── bibliography.bib
+│   ├── bibliography.bib            #Bibliografia principal
 │   ├── bmc-mathphys.bst
 │   ├── bmcart-biblio.sty
 │   ├── bmcart.cls
 │   ├── report.aux
 │   ├── report.bbl
 │   ├── report.blg
-│   ├── report.tex
+│   ├── report.tex                  #Codigo Latex principal
 │   ├── spbasic.bst
 │   └── vancouver.bst
-├── results/
+├── results/                        #Carpeta donde se crearan los resultados
 └── README.md
 ```
 
