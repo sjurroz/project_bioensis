@@ -20,7 +20,7 @@ El proyecto implementa un pipeline automatizado que procesa datos de genes asoci
 - Genes asociados con ELA en la Human Phenotype Ontology (HPO)
 - Una lista de genes seleccionados manualmente
 
-Estos genes sirven como punto de partida para todo el análisis.
+
 
 **Generación de redes:** El sistema consulta la API de STRING para obtener las interacciones proteína-proteína entre los genes de entrada. Filtra estas interacciones por diferentes umbrales de confianza:
 
@@ -28,7 +28,7 @@ Estos genes sirven como punto de partida para todo el análisis.
 - Score 700 (confianza media)
 - Score 900 (confianza alta)
    
-Cada red resultante se visualiza y se exporta en formato GraphML para análisis posteriores.
+Se obtiene una red de cada umbral y se exporta en forma GraphML
 
 **Análisis topológico:** El pipeline calcula métricas estructurales de cada red, incluyendo:
 
@@ -39,6 +39,7 @@ Cada red resultante se visualiza y se exporta en formato GraphML para análisis 
 - Fast Greedy Modularity (optimiza la modularidad)
 - Edge Betweenness (realiza divisiones jerárquicas)
 - Infomap (basado en teoría de la información)
+  
 Estos algoritmos identifican módulos o clusters biológicamente significativos dentro de cada red.
 
 **Análisis funcional:** El pipeline realiza un análisis de enriquecimiento (ORA) para cada cluster identificado, evaluando:
@@ -46,6 +47,7 @@ Estos algoritmos identifican módulos o clusters biológicamente significativos 
 - Términos en Gene Ontology (procesos biológicos)
 - Funciones moleculares
 - Vías KEGG
+
 Esto identifica qué procesos biológicos son característicos de cada módulo.
 
 **Síntesis de resultados:** El sistema genera tablas comparativas considerando:
@@ -118,5 +120,72 @@ project_bioensis/
 ### Configuración del entorno
 
 ```bash
+git clone "enlace_github"
 cd code/
 bash setup.sh
+```
+
+### Ejecución del entorno
+```bash
+cd code/
+bash run.sh
+```
+Con esto se instalan automaticamente los siguientes dependencias:
+
+- `pandas` - Manipulación y análisis de datos
+- `numpy` - Computación numérica
+- `scipy` - Funciones científicas
+- `matplotlib` - Visualización de gráficos
+- `requests` - Solicitudes HTTP (para consultar APIs)
+- `networkx` - Análisis y visualización de redes
+- `seaborn` - Visualización estadística avanzada
+- `gseapy` - Análisis de enriquecimiento funcional (ORA)
+- `infomap` - Algoritmo de clustering basado en teoría de información
+
+## ⚠️ Notas Importantes
+
+- El score de confianza (300/700/900) afecta significativamente el tamaño y composición de la red
+- Los análisis pueden tardar varios minutos dependiendo del tamaño de la red, aproximadamente unos 5-10 min
+- Requiere conexión a internet para consultar APIs (STRING, HPO, GO)
+
+
+**2. 📊 Resultados esperados**
+```markdown
+## 📊 Resultados Esperados
+
+Los análisis generan:
+- Redes GraphML
+- Gráficos de topología y clustering (PNG)
+- Archivos JSON con datos estructurados de cada análisis
+- Tablas comparativas en formato CSV/TSV
+- Análisis de enriquecimiento funcional
+## ⚙️ .gitignore
+```
+#Cache de Python
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# Entorno virtual
+.venv/
+venv/
+env/
+
+# Configuracion local
+*.env
+
+# Archivos Sistema
+.DS_Store
+*/.DS_Store
+```
+
+## 👥 Autores
+
+- Santiago Juarroz Surballe (santiagojuarroz@uma.es)
+- Gabriela Milenova Yordanova (gamy-@uma.es)
+- Maga C. Chediack (chediackmaga@uma.es)
+- Sebastián Rozenblum (srozenblum@uma.es)
+
+**Institución**: Universidad de Málaga  
+**Programa**: Grado en Ingenieria de la Salud
+**Tipo**: Trabajo de final de asignatura
