@@ -21,52 +21,49 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: bibliography.bib
-Warning--I didn't find a database entry for "ELA_HPO"
-Warning--I didn't find a database entry for "RWE_Riluzole2020"
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 30 entries,
+You've used 32 entries,
             7128 wiz_defined-function locations,
-            1367 strings with 16212 characters,
-and the built_in function-call counts, 172098 in all, are:
-= -- 20402
-> -- 1147
-< -- 664
-+ -- 3723
-- -- 347
-* -- 14202
-:= -- 34743
-add.period$ -- 55
-call.type$ -- 30
-change.case$ -- 281
-chr.to.int$ -- 1407
-cite$ -- 30
-duplicate$ -- 3117
-empty$ -- 10550
-format.name$ -- 1195
-if$ -- 37671
+            1378 strings with 16634 characters,
+and the built_in function-call counts, 181443 in all, are:
+= -- 21558
+> -- 1200
+< -- 696
++ -- 3953
+- -- 362
+* -- 14874
+:= -- 36634
+add.period$ -- 59
+call.type$ -- 32
+change.case$ -- 297
+chr.to.int$ -- 1472
+cite$ -- 32
+duplicate$ -- 3279
+empty$ -- 11101
+format.name$ -- 1239
+if$ -- 39756
 int.to.chr$ -- 1
-int.to.str$ -- 75
-missing$ -- 1080
-newline$ -- 978
-num.names$ -- 150
-pop$ -- 1262
+int.to.str$ -- 81
+missing$ -- 1145
+newline$ -- 1025
+num.names$ -- 160
+pop$ -- 1345
 preamble$ -- 1
-purify$ -- 133
-quote$ -- 60
-skip$ -- 9206
+purify$ -- 143
+quote$ -- 64
+skip$ -- 9727
 stack$ -- 0
-substring$ -- 24241
-swap$ -- 1083
-text.length$ -- 477
+substring$ -- 25591
+swap$ -- 1127
+text.length$ -- 506
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1303
+type$ -- 1378
 warning$ -- 0
-while$ -- 1118
+while$ -- 1177
 width$ -- 0
-write$ -- 1366
-(There were 2 warnings)
+write$ -- 1428

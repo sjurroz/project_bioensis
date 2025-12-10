@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{30}
+\begin{thebibliography}{32}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -143,6 +143,16 @@ Accessed: 2024-10-16
 \endbibitem
 
 %%% 8
+\bibitem{ELAHPO}
+\begin{botherref}
+\oauthor{\bsnm{Consortium}, \binits{H.P.O.}}:
+HP:0007354: Amyotrophic lateral sclerosis.
+Accessed: October 16, 2024.
+\url{https://hpo.jax.org/browse/term/HP:0007354}
+\end{botherref}
+\endbibitem
+
+%%% 9
 \bibitem{xie2023cortical}
 \begin{barticle}
 \bauthor{\bsnm{Xie}, \binits{M.}},
@@ -160,7 +170,7 @@ doi:\doiurl{10.1186/s13024-023-00665-w}
 \end{barticle}
 \endbibitem
 
-%%% 9
+%%% 10
 \bibitem{Beghi2010}
 \begin{barticle}
 \bauthor{\bsnm{Beghi}, \binits{E.}},
@@ -175,7 +185,7 @@ doi:\doiurl{10.1016/S0140-6736(10)61156-7}
 \end{barticle}
 \endbibitem
 
-%%% 10
+%%% 11
 \bibitem{Barberio2023}
 \begin{barticle}
 \bauthor{\bsnm{Barberio}, \binits{J.}},
@@ -193,7 +203,7 @@ doi:\doiurl{10.1212/NXG.0000000000200109}
 \end{barticle}
 \endbibitem
 
-%%% 11
+%%% 12
 \bibitem{Kiernan2021}
 \begin{barticle}
 \bauthor{\bsnm{Kiernan}, \binits{M.C.}},
@@ -213,7 +223,7 @@ doi:\doiurl{10.1016/S0140-6736(20)30959-9}
 \end{barticle}
 \endbibitem
 
-%%% 12
+%%% 13
 \bibitem{Wu2016}
 \begin{barticle}
 \bauthor{\bsnm{Wu}, \binits{C.}},
@@ -228,7 +238,7 @@ doi:\doiurl{10.3389/fnagi.2016.00291}
 \end{barticle}
 \endbibitem
 
-%%% 13
+%%% 14
 \bibitem{VanDaele2023}
 \begin{barticle}
 \bauthor{\bsnm{Van~Daele}, \binits{S.H.}},
@@ -250,7 +260,7 @@ doi:\doiurl{10.1093/brain/awad120}
 \end{barticle}
 \endbibitem
 
-%%% 14
+%%% 15
 \bibitem{Gagliardi2023}
 \begin{barticle}
 \bauthor{\bsnm{Gagliardi}, \binits{D.}},
@@ -266,7 +276,7 @@ doi:\doiurl{10.3389/fneur.2023.1169689}
 \end{barticle}
 \endbibitem
 
-%%% 15
+%%% 16
 \bibitem{Berdynski2025}
 \begin{barticle}
 \bauthor{\bsnm{Berdyński}, \binits{M.}},
@@ -283,7 +293,7 @@ doi:\doiurl{10.1155/humu/9792233}
 \end{barticle}
 \endbibitem
 
-%%% 16
+%%% 17
 \bibitem{Rummens2025}
 \begin{barticle}
 \bauthor{\bsnm{Rummens}, \binits{J.}},
@@ -298,7 +308,7 @@ doi:\doiurl{10.1186/s13024-025-00851-y}
 \end{barticle}
 \endbibitem
 
-%%% 17
+%%% 18
 \bibitem{Chia2018}
 \begin{barticle}
 \bauthor{\bsnm{Chia}, \binits{R.}},
@@ -313,7 +323,7 @@ doi:\doiurl{10.1038/s41582-018-0047-0}
 \end{barticle}
 \endbibitem
 
-%%% 18
+%%% 19
 \bibitem{Mejzini2019}
 \begin{barticle}
 \bauthor{\bsnm{Mejzini}, \binits{B.}},
@@ -331,7 +341,7 @@ doi:\doiurl{10.3389/fnins.2019.01310}
 \end{barticle}
 \endbibitem
 
-%%% 19
+%%% 20
 \bibitem{Renton2014}
 \begin{barticle}
 \bauthor{\bsnm{Renton}, \binits{A.E.}},
@@ -346,7 +356,7 @@ doi:\doiurl{10.1038/nn.3584}
 \end{barticle}
 \endbibitem
 
-%%% 20
+%%% 21
 \bibitem{Bjornevik2023}
 \begin{barticle}
 \bauthor{\bsnm{Bjornevik}, \binits{K.}},
@@ -369,7 +379,7 @@ doi:\doiurl{10.1212/WNL.0000000000207296}
 \end{barticle}
 \endbibitem
 
-%%% 21
+%%% 22
 \bibitem{Lynch2023}
 \begin{barticle}
 \bauthor{\bsnm{Lynch}, \binits{K.}}:
@@ -383,7 +393,7 @@ doi:\doiurl{10.37765/ajmc.2023.89389}
 \end{barticle}
 \endbibitem
 
-%%% 22
+%%% 23
 \bibitem{RiluzoleCochrane2012}
 \begin{barticle}
 \bauthor{\bsnm{Miller}, \binits{R.G.}},
@@ -399,7 +409,22 @@ doi:\doiurl{10.1002/14651858.CD001447.pub3}
 \end{barticle}
 \endbibitem
 
-%%% 23
+%%% 24
+\bibitem{RWERiluzole2020}
+\begin{barticle}
+\bauthor{\bsnm{Hinchcliffe}, \binits{M.}},
+\bauthor{\bsnm{Smith}, \binits{A.}}, \betal:
+\batitle{Riluzole: real-world evidence supports significant extension of median
+  survival times in patients with amyotrophic lateral sclerosis}.
+\bjtitle{Degenerative Neurological and Neuromuscular Disease}
+\bvolume{10},
+\bfpage{111}--\blpage{118}
+(\byear{2020}).
+doi:\doiurl{10.2147/DNND.S268523}
+\end{barticle}
+\endbibitem
+
+%%% 25
 \bibitem{Brooks2024}
 \begin{barticle}
 \bauthor{\bsnm{Brooks}, \binits{B.R.}},
@@ -416,7 +441,7 @@ doi:\doiurl{10.1177/17562864231220996}
 \end{barticle}
 \endbibitem
 
-%%% 24
+%%% 26
 \bibitem{newman2004modularity}
 \begin{barticle}
 \bauthor{\bsnm{Newman}, \binits{M.E.J.}},
@@ -430,7 +455,7 @@ doi:\doiurl{10.1103/PhysRevE.69.026113}
 \end{barticle}
 \endbibitem
 
-%%% 25
+%%% 27
 \bibitem{rosvall2008infomap}
 \begin{barticle}
 \bauthor{\bsnm{Rosvall}, \binits{M.}},
@@ -445,7 +470,7 @@ doi:\doiurl{10.1073/pnas.0706851105}
 \end{barticle}
 \endbibitem
 
-%%% 26
+%%% 28
 \bibitem{clauset2004finding}
 \begin{barticle}
 \bauthor{\bsnm{Clauset}, \binits{A.}},
@@ -460,7 +485,7 @@ doi:\doiurl{10.1103/PhysRevE.70.066111}
 \end{barticle}
 \endbibitem
 
-%%% 27
+%%% 29
 \bibitem{Szklarczyk2023}
 \begin{barticle}
 \bauthor{\bsnm{Szklarczyk}, \binits{D.}}, \betal:
@@ -473,7 +498,7 @@ doi:\doiurl{10.1103/PhysRevE.70.066111}
 \end{barticle}
 \endbibitem
 
-%%% 28
+%%% 30
 \bibitem{Cheng2011}
 \begin{botherref}
 \oauthor{\bsnm{Cheng}, \binits{K.C.}},
@@ -486,7 +511,7 @@ doi:\doiurl{10.1016/j.gde.2011.08.006}
 \end{botherref}
 \endbibitem
 
-%%% 29
+%%% 31
 \bibitem{Stoeger2019}
 \begin{barticle}
 \bauthor{\bsnm{Stoeger}, \binits{T.}},
@@ -502,7 +527,7 @@ doi:\doiurl{10.1016/j.gde.2011.08.006}
 \end{barticle}
 \endbibitem
 
-%%% 30
+%%% 32
 \bibitem{Gagliardi2019}
 \begin{barticle}
 \bauthor{\bsnm{Gagliardi}, \binits{S.}},
@@ -636,6 +661,15 @@ doi:\doiurl{10.1007/s00415-018-9141-z}
 </bibl>
 
 <bibl id="B8">
+  <title><p>HP:0007354: Amyotrophic lateral sclerosis</p></title>
+  <aug>
+    <au><snm>Consortium</snm><fnm>HPO</fnm></au>
+  </aug>
+  <url>https://hpo.jax.org/browse/term/HP:0007354</url>
+  <note>Accessed: October 16, 2024</note>
+</bibl>
+
+<bibl id="B9">
   <title><p>Regulation of cortical hyperexcitability in amyotrophic lateral
   sclerosis: focusing on glial mechanisms</p></title>
   <aug>
@@ -651,7 +685,7 @@ doi:\doiurl{10.1007/s00415-018-9141-z}
   <fpage>75</fpage>
 </bibl>
 
-<bibl id="B9">
+<bibl id="B10">
   <title><p>Variation in worldwide incidence of amyotrophic lateral sclerosis:
   a meta-analysis</p></title>
   <aug>
@@ -667,7 +701,7 @@ doi:\doiurl{10.1007/s00415-018-9141-z}
   <lpage>-523</lpage>
 </bibl>
 
-<bibl id="B10">
+<bibl id="B11">
   <title><p>Estimated Familial Amyotrophic Lateral Sclerosis Proportion: A
   Literature Review and Meta-analysis</p></title>
   <aug>
@@ -684,7 +718,7 @@ doi:\doiurl{10.1007/s00415-018-9141-z}
   <fpage>e200109</fpage>
 </bibl>
 
-<bibl id="B11">
+<bibl id="B12">
   <title><p>Amyotrophic lateral sclerosis</p></title>
   <aug>
     <au><snm>Kiernan</snm><fnm>M. C.</fnm></au>
@@ -704,7 +738,7 @@ doi:\doiurl{10.1007/s00415-018-9141-z}
   <lpage>-406</lpage>
 </bibl>
 
-<bibl id="B12">
+<bibl id="B13">
   <title><p>A Novel Missense Mutation of the DDHD1 Gene Associated with
   Juvenile Amyotrophic Lateral Sclerosis</p></title>
   <aug>
@@ -717,7 +751,7 @@ doi:\doiurl{10.1007/s00415-018-9141-z}
   <fpage>291</fpage>
 </bibl>
 
-<bibl id="B13">
+<bibl id="B14">
   <title><p>Genetic variability in sporadic amyotrophic lateral
   sclerosis</p></title>
   <aug>
@@ -741,7 +775,7 @@ doi:\doiurl{10.1007/s00415-018-9141-z}
   <lpage>-3769</lpage>
 </bibl>
 
-<bibl id="B14">
+<bibl id="B15">
   <title><p>Clinical and molecular features of patients with amyotrophic
   lateral sclerosis and SOD1 mutations: a monocentric study</p></title>
   <aug>
@@ -756,7 +790,7 @@ doi:\doiurl{10.1007/s00415-018-9141-z}
   <fpage>1169689</fpage>
 </bibl>
 
-<bibl id="B15">
+<bibl id="B16">
   <title><p>Phenotypic Characterization of ALS-Causing SOD1 Mutations Affecting
   Polypeptide Length</p></title>
   <aug>
@@ -771,7 +805,7 @@ doi:\doiurl{10.1007/s00415-018-9141-z}
   <fpage>9792233</fpage>
 </bibl>
 
-<bibl id="B16">
+<bibl id="B17">
   <title><p>RNA-binding proteins in ALS and FTD: from pathogenic mechanisms to
   therapeutic insights</p></title>
   <aug>
@@ -784,7 +818,7 @@ doi:\doiurl{10.1007/s00415-018-9141-z}
   <fpage>64</fpage>
 </bibl>
 
-<bibl id="B17">
+<bibl id="B18">
   <title><p>Genetics and pathogenesis of amyotrophic lateral
   sclerosis</p></title>
   <aug>
@@ -800,7 +834,7 @@ doi:\doiurl{10.1007/s00415-018-9141-z}
   <lpage>-664</lpage>
 </bibl>
 
-<bibl id="B18">
+<bibl id="B19">
   <title><p>ALS genetics, mechanisms, and therapeutics: where are we
   now?</p></title>
   <aug>
@@ -817,7 +851,7 @@ doi:\doiurl{10.1007/s00415-018-9141-z}
   <fpage>1310</fpage>
 </bibl>
 
-<bibl id="B19">
+<bibl id="B20">
   <title><p>State of play in amyotrophic lateral sclerosis genetics</p></title>
   <aug>
     <au><snm>Renton</snm><fnm>A. E.</fnm></au>
@@ -832,7 +866,7 @@ doi:\doiurl{10.1007/s00415-018-9141-z}
   <lpage>-23</lpage>
 </bibl>
 
-<bibl id="B20">
+<bibl id="B21">
   <title><p>Prediagnostic neurofilament light chain levels in amyotrophic
   lateral sclerosis</p></title>
   <aug>
@@ -855,7 +889,7 @@ doi:\doiurl{10.1007/s00415-018-9141-z}
   <lpage>-e23</lpage>
 </bibl>
 
-<bibl id="B21">
+<bibl id="B22">
   <title><p>Optimizing pharmacologic treatment for ALS to improve outcomes and
   quality of life</p></title>
   <aug>
@@ -869,7 +903,7 @@ doi:\doiurl{10.1007/s00415-018-9141-z}
   <lpage>-S119</lpage>
 </bibl>
 
-<bibl id="B22">
+<bibl id="B23">
   <title><p>Riluzole for amyotrophic lateral sclerosis (ALS)/motor neuron
   disease (MND)</p></title>
   <aug>
@@ -883,7 +917,23 @@ doi:\doiurl{10.1007/s00415-018-9141-z}
   <issue>3</issue>
 </bibl>
 
-<bibl id="B23">
+<bibl id="B24">
+  <title><p>Riluzole: real-world evidence supports significant extension of
+  median survival times in patients with amyotrophic lateral
+  sclerosis</p></title>
+  <aug>
+    <au><snm>Hinchcliffe</snm><fnm>M</fnm></au>
+    <au><snm>Smith</snm><fnm>A</fnm></au>
+    <au><cnm>{others}</cnm></au>
+  </aug>
+  <source>Degenerative Neurological and Neuromuscular Disease</source>
+  <pubdate>2020</pubdate>
+  <volume>10</volume>
+  <fpage>111</fpage>
+  <lpage>-118</lpage>
+</bibl>
+
+<bibl id="B25">
   <title><p>Efficacy of intravenous edaravone in slowing disability progression
   in patients with amyotrophic lateral sclerosis: an individual patient data
   meta-analysis</p></title>
@@ -899,7 +949,7 @@ doi:\doiurl{10.1007/s00415-018-9141-z}
   <fpage>17562864231220996</fpage>
 </bibl>
 
-<bibl id="B24">
+<bibl id="B26">
   <title><p>Finding and evaluating community structure in networks</p></title>
   <aug>
     <au><snm>Newman</snm><fnm>M. E. J.</fnm></au>
@@ -914,7 +964,7 @@ doi:\doiurl{10.1007/s00415-018-9141-z}
   <url>https://journals.aps.org/pre/abstract/10.1103/PhysRevE.69.026113</url>
 </bibl>
 
-<bibl id="B25">
+<bibl id="B27">
   <title><p>Maps of information flow reveal community structure in complex
   networks</p></title>
   <aug>
@@ -931,7 +981,7 @@ doi:\doiurl{10.1007/s00415-018-9141-z}
   <url>https://doi.org/10.1073/pnas.0706851105</url>
 </bibl>
 
-<bibl id="B26">
+<bibl id="B28">
   <title><p>Finding community structure in very large networks</p></title>
   <aug>
     <au><snm>Clauset</snm><fnm>A</fnm></au>
@@ -946,7 +996,7 @@ doi:\doiurl{10.1007/s00415-018-9141-z}
   <fpage>066111</fpage>
 </bibl>
 
-<bibl id="B27">
+<bibl id="B29">
   <title><p>The STRING database in 2023: protein--protein association networks
   and functional enrichment analysis for any sequenced genome of
   interest</p></title>
@@ -963,7 +1013,7 @@ doi:\doiurl{10.1007/s00415-018-9141-z}
   <lpage>-D646</lpage>
 </bibl>
 
-<bibl id="B28">
+<bibl id="B30">
   <title><p>{Whole-animal imaging, gene function, and the Zebrafish Phenome
   Project}</p></title>
   <aug>
@@ -976,7 +1026,7 @@ doi:\doiurl{10.1007/s00415-018-9141-z}
   <pubdate>2011</pubdate>
 </bibl>
 
-<bibl id="B29">
+<bibl id="B31">
   <title><p>Large-scale investigation of the reasons why potentially important
   genes are ignored</p></title>
   <aug>
@@ -993,7 +1043,7 @@ doi:\doiurl{10.1007/s00415-018-9141-z}
   <fpage>e2006643</fpage>
 </bibl>
 
-<bibl id="B30">
+<bibl id="B32">
   <title><p>PON1 polymorphisms in amyotrophic lateral sclerosis: a possible
   role in the pathogenesis of the disease</p></title>
   <aug>
